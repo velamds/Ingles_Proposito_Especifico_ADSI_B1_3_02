@@ -1,0 +1,1291 @@
+/* 
+    Created on : 10/09/2016, 10:03:52 PM
+    Author     : Zelleta Soft S.A.S
+*/
+.modal-backdrop{
+    background-color: transparent !important;
+}
+.modal-backdrop in{
+    opacity: 0;
+}
+.contenedor_general_actividad #btn_actividad_container .btn_actividad{
+    width: 100%;
+}
+.instruccion_txt_actividad p{
+    font-size: 40px;
+}
+
+a{
+    cursor: pointer;
+}
+*{
+    font-family: arial, sans-serif;
+}
+
+.titulo_actividad p, .reglas_actividad p{
+    font-family: arial, sans-serif;
+}
+
+/*._{
+    font-family: 'Source Sans Pro Bold', arial, sans-serif;
+}
+
+._{
+    font-family: 'Source Sans Pro Semibold', arial, sans-serif;
+}
+
+._{
+    font-family: 'Source Sans Pro Light', arial, sans-serif;
+}*/
+.body_popup_actividad{
+    width: 100%;
+    float: left;
+    background: transparent
+}
+.btn_actividad{
+    position: relative;
+    float: right;
+    right: 1%;
+    height: auto;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0 !important;
+    outline: none; 
+}
+.pista_palabra_ahogado .btn_actividad{
+    right: 20px;
+}
+.btn_enviar_gris{
+    background-color: #787878;
+    border: solid 2px #8B8B8B;
+}
+.btn_enviar_gris:hover{
+    background-color: #606060;
+}
+.cont_reintentar .btn_enviar_morado{
+    position: fixed;
+    bottom: 100px;
+    right: 65px;
+}
+.btn_enviar_morado{
+    width: 120px;
+    background-color: #43935B;
+    border: solid 2px #2d6d40;
+}
+.btn_enviar_morado:hover{
+    background-color: #43935B;
+}
+#pantalla_invisible{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+#popup_overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.popup_activity{
+    width: 98% !important;
+    height: 96% !important;
+    position: fixed !important;
+    top: 2% !important;
+    left: 1% !important;
+    padding: 0 !important;
+}
+.header_popup_activity,
+.mensajes_popup_activity{
+    margin: 1% 0;    
+}
+.header_popup_activity,
+.mensajes_popup_activity,
+.btn_popup_activity{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+#titulo,#mensaje{
+    text-align: left;
+    padding: 0 10px;
+}
+#mensaje audio, #mensaje video, #mensaje img{
+    margin: 0 35% !important;
+}
+#titulo{
+    font-weight: bold;
+}
+#mensaje{
+    font-weight: lighter;
+}
+#mensaje img, #mensaje video, #mensaje audio{
+    max-width: 25%;
+}
+.header_popup_activity{
+    border-bottom: solid 0.3vw #005672;
+}
+.ico_mano,
+.ico_cerrar_popup_activity{
+    width: 10%;
+}
+.ico_mano img,
+.ico_cerrar_popup_activity img{
+    display: block;
+}
+.ico_mano img{
+    width: 80% !important;
+    margin: 7% auto;
+}
+.ico_cerrar_popup_activity img{
+    width: 60% !important;
+    margin: 17% auto;
+    cursor: pointer;
+}
+.ico_mano{
+    float: left;
+}
+.ico_cerrar_popup_activity{
+    float: right;
+}
+.btn_popup_activity #btn_responder_pregunta{
+    position: relative !important;
+    display: block;
+    float: none;
+    margin: 2% auto !important;
+    padding: 0px 3% !important;
+    font-size: 16px !important;
+}
+.contenedor_general_inicio_actividad{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* --- INICIO_ACTIVIDAD.HTML --- */
+.titulo_actividad{
+    width: 90%;
+    position: relative;
+    float: left;
+    margin-top: 0px;
+}
+
+.titulo_actividad p{
+    color: #015772;
+    font-size: 19px;
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+    left: -9%;
+    width: 100%;
+    opacity: 0;
+    margin: 13px;
+}
+.titulo_actividad p label {
+    font-size: 14px;
+    color: #000;
+}
+.titulo_actividad img{
+    position: relative;
+    float: left;
+    height: auto !important;
+    top: 15%;
+    left: -5%;
+    opacity: 0;
+    z-index: 1;
+    width: 50px !important;
+}
+
+.descripcion_actividad{
+    position: relative;
+    left: -90%;
+    opacity: 0;
+    float: left;
+    width: 85%;
+}
+
+.descripcion_actividad p{
+    color: #3f4253;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+}
+
+.actividad{
+    width: 100%;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 0.5;
+}
+#icono_1{
+    cursor: pointer;
+}
+.icono_actividad_img{
+    width: 60%;
+    position: relative;
+    float: left;
+}
+
+.icono_actividad_img img{
+    position: relative;
+    width: 0;
+    opacity: 0;
+    padding-top: 2%;
+}
+
+.pista_pregunta{
+    width: 30px;
+    cursor: pointer;
+}
+.pista{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.reglas_actividad{
+    width: 38%;
+    position: relative;
+    float: left;
+}
+
+.reglas_actividad p{
+    position: relative;
+    margin: 0;
+    font-size: 1.7vw;
+    color: #015772;
+    left: -50%;
+    opacity: 0;
+}
+
+.reglas_actividad hr{
+    border: solid 1px #8066a9;
+    width: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+#iconos_reglas_actividad{
+    margin: 1% 0;
+}
+
+.reglas_actividad div{
+    position: relative;
+    width: 100%;
+    margin: 0.8% 0;
+    float: none;
+    display: table-row;
+}
+
+.reglas_actividad div img{
+    position: relative;
+    width: 45%;
+    z-index: 1;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 5px auto;
+    opacity: 0;
+}
+
+.reglas_actividad div span{
+    position: relative;
+    font-size: 13px;
+    color: #015772;
+    float: none;
+    width: auto;
+    left: -20%;
+    padding: 2px 0;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+#btn_inicio_actividad_container {
+    position: relative;
+    right: 40%;
+    margin: 30px auto;
+}
+.objeto_eva #btn_inicio_actividad_container {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 40px;
+    right: 0;
+    margin: 0;
+}
+@media only screen and (max-width: 1024px){
+    #btn_inicio_actividad_container {
+        right: 36%;
+    }
+}
+#btn_actividad_container{
+    position: fixed;
+    bottom: 8%;
+    width: 115px;
+    float: left;
+    height: 40px;
+    right: 20px;
+}
+.btn_iniciar{
+    position: relative;
+    width: 10%;
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-right: 1%;
+}
+
+.btn_enviar{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: auto;
+    height: 9%;
+    cursor: pointer;
+}
+/* --- INICIO_ACTIVIDAD.HTML --- */
+
+.actividad{
+    width: 100%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.descripcion_actividad p{
+    color: #3f4253;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+}
+
+.icono_actividad_img{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.icono_actividad_img img{
+    position: relative;
+    width: 0;
+    opacity: 0;
+    padding-top: 2%;
+}
+
+.reglas_actividad{
+    width: 48%;
+    position: relative;
+    float: left;
+}
+
+.reglas_actividad p{
+    position: relative;
+    margin: 0;
+    font-size: 19px;
+    color: #015772;
+    left: -50%;
+    opacity: 0;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 992px){
+
+    /* --- INICIO_ACTIVIDAD.HTML --- */
+
+    .actividad{
+        width: 100%;
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .descripcion_actividad p{
+        color: #3f4253;
+        font-size: 15px;
+        margin: 0;
+        position: relative;
+    }
+
+    .icono_actividad_img{
+        width: 36%;
+        position: relative;
+        float: left;
+        height: 65%;
+    }
+
+    .icono_actividad_img img{
+        position: relative;
+        width: 0;
+        opacity: 0;
+        padding-top: 2%;
+    }
+
+    .reglas_actividad{
+        width: 60%;
+        position: relative;
+        float: left;
+    }
+
+    .reglas_actividad p{
+        position: relative;
+        margin: 0;
+        font-size: 16px;
+        color: #015772;
+        left: -50%;
+        opacity: 0;
+    }
+
+    #btn_iniciar{
+        position: relative;
+        width: 25%;
+        cursor: pointer;
+        display: none;
+        float: right;
+        margin-right: 1%;
+    }
+
+}
+
+/*
+-------------------------------- ESTILOS GENERALES --------------------------- 
+*/
+.contenedor_general_actividad{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.contenedor_actividad{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 15%;
+    overflow: auto;
+}
+.contenedor_eva{
+    position: absolute;
+    width: 100%;
+    height: 87%;
+    overflow: auto;
+    top: 50px;
+}
+.preguntas{
+    position: relative;
+    height: 30%;
+    top: 0%;
+    float: right;
+    right: 35px;
+}
+.preguntas div{
+    width: 40%;
+    left: 30%;
+    /* position: relative; */
+    height: 20%;
+    display: block;
+    margin: 15px auto;
+}
+@media only screen and (orientation:landscape) and (max-device-width: 1024px){
+    .preguntas div{
+        height: 25%;
+    }
+}
+.preguntas div img{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 35px;
+}
+.pregunta_1{
+    top: 0;
+}
+.pregunta_2{
+    top: 15%;
+}
+.pregunta_3{
+    top: 30%;
+}
+.pregunta_4{
+    top: 45%;
+}
+.pregunta_5{
+    top: 60%;
+}
+.pregunta_6{
+    top: 75%;
+}
+.pregunta_7{
+    top: 90%;
+}
+.pregunta_8{
+    top: 105%;
+}
+.pregunta_9{
+    top: 120%;
+}
+.pregunta_10{
+    top: 135%;
+}
+
+.sub_contenedor_general{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+/* - INICIO ESTILOS PARA LOS TOOLTIPS DE TIEMPO, PUNTOS E INSTRUCCION(header actividad) - */
+#puntos_tooltip {
+    background-image: url('../img/general_tooltip.png');
+    padding: 18px 0 0 55px;
+}
+#tiempo_tooltip {
+    background-image: url('../img/general_tooltip.png');
+    padding: 18px 0 0 60px;
+}
+#instruccion_tooltip {
+    background-image: url('../img/general_tooltip.png');
+    padding: 18px 0 0 40px;
+    right: 0px !important;
+}
+#tiempo_tooltip,
+#puntos_tooltip,
+#instruccion_tooltip{
+    position: absolute;
+    top: calc(55px + 3px);
+    bottom: 10%;
+    right: 40%;
+    display: none;
+    z-index: 1;
+    width: 152px; 
+    height: 48px;
+    color: white;
+}
+
+/* - FIN ESTILOS PARA LOS TOOLTIPS DE TIEMPO, PUNTOS E INSTRUCCION(header actividad) - */
+
+/* - INICIO ESTILOS PARA EL HEADER DE LAS ACTIVIDADES - */
+
+.header_actividad{
+    width: 100%;
+    position: absolute;
+    height: 25%;
+}
+
+.img_logo_actividad{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+}
+
+.img_logo_actividad img{
+    position: absolute;
+    height: 50px;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombre_actividad{
+    position: relative;
+    height: 50px;
+    left: 9%;
+}
+
+.nombre_actividad p{
+    position: relative;
+    color: #004c5e;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0.5% 0;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+.iconos_actividad{
+    position: absolute;
+    height: 80%;
+    width: 500px;
+    right: 5%;
+    top: 0;
+}
+
+.tiempo_actividad{
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+    float: right;
+}
+
+.puntos_actividad{
+    position: relative;
+    height: 100%;
+    width: 33.33%;
+    float: right;
+}
+
+.instruccion_actividad{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+#bring_puntos {
+    background-image: url('../img/puntos_ico.png');
+}
+#bring_tiempo {
+    background-image: url('../img/crono_ico.png');
+}
+#bring_instruccion {
+    background-image: url('../img/info_ico.png');
+}
+#bring_puntos, #bring_tiempo, #bring_instruccion {
+    position: absolute;
+    top: 5%;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.instruccion_actividad{
+    cursor: pointer;
+}
+
+.tiempo_actividad p,
+.puntos_actividad p,
+.instruccion_actividad p{
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    right: 80px;
+}
+
+#btn_terminar_juego{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: auto;
+    height: 9%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #787878;
+    border: solid 2px #8B8B8B;
+    font-weight: 600;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    padding: 0 3%;
+    outline: none;
+}
+
+@media only screen and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .img_logo_actividad img{
+        height: 51%;
+        top: 20%;
+    }
+
+    .nombre_actividad{
+        width: 40%;
+    }
+
+    .nombre_actividad p{
+        padding-top: 25px;
+    }
+
+    #btn_terminar_juego{
+        height: 8%;
+    }
+}
+/* - FIN ESTILOS PARA EL HEADER DE LAS ACTIVIDADES - */
+
+/* - INICIO DE ESTILOS PARA INTERNAS - */
+
+.contenedor_general_internas{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    overflow-x: hidden;
+}
+
+.contenedor_general_internas table{
+    width: 100%;
+}
+
+.contenedor_general_internas td{
+    padding: 0 2%;
+}
+
+.parrafo_tab{
+    width: 100%;
+    position: relative;
+    float: left;
+    margin: 1.5%;
+    line-height: 2;
+}
+
+.parrafo_tab p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.parrafo_tab img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+    .parrafo_tab p{
+        font-size: 12px;
+    }  
+
+    .parrafo_tab img{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .parrafo_tab p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+}
+
+/* - FIN DE ESTILOS PARA INTERNAS - */
+
+/* - INICIO DE ESTILOS PARA RESULTADOS DE LAS ACTIVIDADES(exito, fallo) - */
+
+.resultado_actividad_txt{
+    position: absolute;
+    width: 80%;
+    height: 35%;
+}
+
+.resultado_actividad_txt hr{
+    border: solid 0.2vw #8066a9;
+    position: absolute;
+    width: 48%;
+    bottom: -10%;
+    margin: 0;
+}
+
+.tiempo_final_actividad{
+    width: 20%;
+    position: absolute;
+    height: 10%;
+    left: 80%;
+    top: 3%;
+}
+
+#tiempo_juego{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#tiempo_juego_tooltip{
+    position: absolute;
+    width: 30%;
+    height: auto !important;
+    top: auto;
+    bottom: -10%;
+    left: -5%;
+    display: block;
+}
+
+.tiempo_final_actividad #tiempo_juego img{
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+.tiempo_final_actividad #tiempo_juego .tiempo_txt{
+    position: absolute;
+    height: 100%;
+    top: 30%;
+    font-size: 1.5vw;
+    color: #003448;
+    right: 45%;
+}
+
+.tiempo_final_actividad #tiempo_juego .tiempo_final{
+    position: absolute;
+    height: 100%;
+    top: 30%;
+    font-size: 1.5vw;
+    margin-left: 2%;
+    color: #71c3d2;
+    right: 25%;
+}
+
+
+@media only screen and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px){
+
+    .resultado_actividad_txt{
+        width: 70%;
+    }
+
+    .resultado_actividad_txt hr{
+        width: 40%;
+        bottom: 0;
+    }
+
+    .tiempo_final_actividad{
+        width: 30%;
+        left: 70%;
+    }
+
+    #tiempo_juego_tooltip{
+        visibility: hidden;
+        display: none;
+    }
+
+    .tiempo_final_actividad #tiempo_juego .tiempo_txt{
+        font-size: 2vw;
+    }
+
+    .tiempo_final_actividad #tiempo_juego .tiempo_final{
+        font-size: 2vw;
+    }
+
+}
+
+/* - FIN DE ESTILOS PARA RESULTADOS DE LAS ACTIVIDADES(exito, fallo) - */
+
+/* - INICIO DE ESTILOS PARA RESULTADOS - */
+
+.titulo_resultados_txt, .tiempo_actividad, .titulo_exito_txt, #tiempo_txt, #tiempo_final, #titulo_txt, .resultados_preguntas p, .resultados_preguntas span{
+    font-family: arial, sans-serif;
+}
+.contenedor_general_resultado{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.justificacion{
+    color: #074b62 !important;
+    line-height: 1.3;
+    font-weight: normal !important;
+}
+.resultado_exito, resultado_exito_eva{
+    position: relative;
+    float: left;
+    width: 90%;
+}
+.titulo_resultados_txt{
+	position: relative;
+	position: relative;
+	position: relative;
+float: left;
+width: 90%;
+color: #71c3d2;
+font-size: 3.5vw;
+margin: 0;
+margin-left: 4%;
+font-weight: 600;
+}
+.titulo_exito_txt{
+    margin-top: -20px !important;
+position: relative;
+float: left;
+width: 90%;
+color: #02354a;
+font-size: 3.5vw;
+margin: 0;
+margin-left: 4%;
+font-weight: 600;
+}
+.titulo_exito_txt img{
+    position: relative;
+    width: 5%;
+}
+.titulo_exito_txt_eva img{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.resultado_exito hr, .resultado_exito_eva hr{
+    border: solid 0.2vw #8066a9;
+    position: relative;
+    float: left;
+    width: 59%;
+    margin: 0;
+}
+.resultado_exito_eva hr{
+    width: 75%;
+}
+.tiempo_actividad_resultado{
+    width: 20%;
+    position: absolute;
+    height: 10%;
+    left: 80%;
+    top: 3%;
+}
+.resultados_preguntas{
+    padding-left: 85px;
+    width: 90%;
+    position: relative;
+    float: left;
+}
+#respuestas_columna_uno{
+    position: relative;
+}
+#respuestas_columna_dos{
+    margin-left: 10%;
+    position: relative;
+}
+.resultados_preguntas p{
+    font-size: 16px;
+    line-height: 1;
+    width: 85%;
+}
+.numero_pregunta{
+    color: #074b62;
+    float: left;
+}
+.subtitulo_respuesta_txt{
+    color: #856da7;
+    font-weight: bold;
+}
+.subtitulo_respuesta_txt span{
+    font-weight: normal !important;
+}
+.resultados_preguntas span{
+    color: #2CA925;
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+}
+.respuestas_juego{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+}
+.respuestas_juego .respuesta_fallida{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+.respuestas_juego .respuesta_correcta{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+.txt_respuesta_correcta{
+    color: #449d44 !important;
+    font-weight: normal !important;
+}
+.txt_respuesta_incorrecta{
+    color: #ac2925 !important;
+    font-weight: normal !important;
+}
+#su_respuesta_txt,
+#respuesta_correcata_txt{
+    position: relative;
+    color: #71C3d2;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+}
+
+#palabra_clave_fallida,
+#palabra_clave_correcta{
+    position: relative;
+    color: #013449;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 5%;
+}
+.cont_reintentar{
+    background: transparent;
+    width: 100%;
+    float: left;
+}
+.cont_pregunta{
+    position: relative;
+    width: 90%;
+    padding: 20px 30px;
+    overflow: auto;
+    display: block;
+    margin: auto;
+}
+.cont_pregunta img{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 5%;
+}
+.numero_intentos{
+    margin: 50px 0px 0px 0px;
+}
+.numero_intentos p{
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    color: #8168a8;
+    font-weight: 600;
+}    
+.numero_intentos img{
+    position: relative;
+    width: 7%;
+}
+.numero_intentos .btn_actividad{
+    bottom: 10% !important;
+}
+.btn_reintentar{
+    position:absolute;
+    right:5%;
+    cursor: pointer;
+}
+/* - FIN DE ESTILOS PARA RESULTADOS - */
+/* - INICIO DE ESTILOS PARA MODALS - */
+.popup_actividad{
+    position: absolute;
+    width: 800px;
+    top: 5%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px 10px 0 0;
+    z-index: 4;
+    background: #fff;
+    padding: 0.3% 0.5%;
+    border-top: 1px solid #055771;
+    border-left: 1px solid #055771;
+    border-right: 1px solid #055771;
+}
+.header_popup_actividad{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: auto;
+    border-bottom: solid 0.3vw #055771;
+}
+.header_popup_actividad p{
+    font-family: 'Source Sans Pro Bold', arial, sans-serif;
+}
+.cerrar_btn_actividad{
+    float: right;
+    width: 10%;
+}
+.cerrar_btn_actividad img{
+    cursor: pointer;
+    width: 35px;
+    float: right;
+    padding-top: 10%;
+}
+.header_popup_actividad .info_img_actividad{
+    float: left;
+    width: 60px;
+}
+.info_img_actividad img{
+    width: 45px;
+    display: block;
+    margin-top: 2.5%;
+}
+.instruccion_txt_actividad{
+    float: left;
+}
+.instruccion_txt_actividad p{
+    color: #72c4cf;
+    margin: 0;
+}
+.flecha_azul_instrucciones{
+    position: absolute;
+    left: 0;
+}
+.instrucciones_actividad{}
+.instrucciones_actividad .text_actividad{
+    font-size: 16px;
+    width: 98%;
+    padding: 15px;
+    overflow: auto;
+    color: #004b5e;
+}
+.instrucciones_actividad .text_actividad span img{
+    width: 4%;
+}
+#cont_instrucciones ul{
+    position: absolute;
+    left: -1px;
+    width: 800px;
+    background-color: #FFF;
+    list-style-image: url('../img/flecha_azul.png');
+    border-bottom: 1px solid #055771;
+    border-left: 1px solid #055771;
+    border-right: 1px solid #055771;
+    border-radius: 0 0 10px 10px;
+}
+#cont_instrucciones ul li{
+    margin: 10px 0;
+    font-size: 14px !important;
+}
+.text_actividad p{
+    text-align: left;
+}
+/*INICIO CSS POPUP PREGUNTA*/
+#contenedor_popup_pregunta{
+    background: rgba(2,76,95,0.65);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.popup_pregunta{
+    border: 1px solid #055771;
+    position: fixed;
+    width: 70%;
+    height: auto;
+    max-height: 90%;
+    left: 15%;
+    border-radius: 10px;
+    z-index: 1041;
+    background: #fff;
+    padding-left: 0%;
+    overflow: auto;
+}
+#popup_resultado{
+    top: 5%;
+}
+#popup_resultado .btn_actividad{
+    position: relative;
+    float: right;
+}
+.popup_pregunta #actividad_pista{
+    width: 100%;
+    padding: 0 20px;
+}
+#titulo_txt_pregunta{
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    padding: 5% 5% 0% 5%;
+    text-align: left;
+}
+
+.opciones_respuesta_pregunta{
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding: 1% 5% 3%;
+}
+
+.opciones_respuesta_pregunta > div{
+    margin: 1% 0;
+    position: relative;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    text-align: left;
+}
+
+.radio_button_pregunta{
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+    background-color: #034c5e; 
+    border-radius: 100%;
+    border: solid 0.2vw #03b1bc;
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 10px;
+    float:left;
+}
+
+.radio_button_pregunta_active{
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+    background-color: #03b1bc; 
+    margin: 2% 0;
+    border-radius: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-right: 1%;
+    float:left;
+}
+
+.active_radio_center_pregunta{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #034c5e;
+    border-radius: 100%;
+    border: solid 0.3vw #668A93;
+}
+
+.option_pregunta{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.imagen_pregunta_respuesta{
+    position: relative !important;
+    width: 90% !important;
+    right: 0 !important;
+    top: 0 !important;
+    float: left !important;
+}
+
+#btn_responder_pregunta{
+    position: relative;
+    margin: 2%;
+    float: right;
+    cursor: pointer;
+}
+/*FIN CSS POPUP PREGUNTA*/
+/* - FIN DE ESTILOS PARA MODALS - */
+@media only screen and (max-width: 767px){
+    .btn_actividad{
+        font-size: 16px;
+        width: 120px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .icono_actividad_img{
+        width: 25%;
+        position: relative;
+        float: left;
+    }
+    #btn_inicio_actividad_container {
+        right: 21%;
+    }
+    .reglas_actividad {
+        width: 72%;
+    }
+    .reglas_actividad div img {
+        width: 25%;
+    }
+}
