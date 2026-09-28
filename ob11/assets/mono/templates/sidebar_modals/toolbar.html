@@ -1,0 +1,37 @@
+<div class="modal fade" id="myToolbar" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myToolbar').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel">Toolbar</h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <br />
+                        <span data-bind="html:$root.localization.help_toolbar_header"><p>The toolbar has all your resources for the lesson. Click on the bar to expand it or any icon to go directly to your section.</p></span>
+                        <br />
+                        <div>
+                            <img class="help-toolbar-img" data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/toolbar-lab-task.png' }" />
+                            <span class="product-color-text" data-bind="html:$root.localization.help_toolbar_labtask_title">Lab task </span><br />
+                            <span data-bind="html:$root.localization.help_toolbar_labtask">Click this icon to download the lab task for the lesson.</span>
+                        </div>
+                        <br />
+                        <div>
+                            <img class="help-toolbar-img" data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/learning-tools.png' }" />
+                            <span class="product-color-text" data-bind="html:$root.localization.help_toolbar_learningtools_title">Learning tools </span><br />
+                            <span data-bind="html:$root.localization.help_toolbar_learningtools">Click this icon to see the learning tools. You will see the tools. Click on any tool for more information.</span>
+                        </div>
+                        <br />
+                        <div>
+                            <img class="help-toolbar-img-help" data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/toolbar_help_icon.png' }" />
+                            <span class="product-color-text" data-bind="html:$root.localization.help_toolbar_help_title">Help </span><br />
+                            <span data-bind="html:$root.localization.help_toolbar_help">Click on the Help button to get help with any of the functions of the program.</span>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

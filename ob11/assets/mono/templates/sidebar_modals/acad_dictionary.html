@@ -1,0 +1,77 @@
+<div class="modal fade" id="myDictionary" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header learning-tools">
+
+        <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myDictionary').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <h4 class="modal-title" id="myModalLabel">Dictionary</h4>
+      </div>
+		<div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3 search-area-container">
+                        <div class= "search-area">
+                            <div class="row search-bar">
+                                <div class="col-md-12 col-sm-12 col-xs-12 search-bar-container">
+                                    <input data-bind="value: $root.displayed_search_term, valueUpdate: 'afterkeydown' , event: { 'keyup': $root.set_auto_search }" placeholder="Search..."></input>
+                                </div>
+                                <div class="search-back" data-bind="visible: $root.search_term().length > 0">
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wordList link-cursor">
+                            <div class="list-letters">
+                                <ul class="letterss list-unstyled" data-bind='foreach:  $root.letterArray()'>
+                                    <div class="col-md-12 col-sm-12 col-xs-12 word-content-container">
+                                        <li data-bind="click: $root.set_selected_item, attr{id: $data }">
+                                        <span class="arrow-container glyphicon glyphicon-chevron-right " data-bind="visible: $data != $root.search_term().toUpperCase()"></span><span class="arrow-container glyphicon glyphicon-chevron-down" data-bind="visible: $data == $root.search_term().toUpperCase()"></span><span class="letter-container" data-bind="text: $data"></span> </li>
+                                 
+                                    <ul class="list-words list-unstyled" data-bind='visible: $data.toLowerCase() == $root.search_term().charAt(0).toLowerCase(), foreach: $root.sorted_dictionary_items()[$index()].words'>
+                                            <li data-bind="visible: $root.check_search(item()), click: $root.set_selected_word, css: $root.selected_item().item == item ? 'selected' : ''">
+                                            <span class="words-list-container" data-bind="text: item()"> </span>
+                                            </li>
+                                    </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-9 word-content-container">
+                        <div class="select-word center-block" data-bind="visible: ! $root.selected_item()">
+                            <div class="info-img"><img data-bind="attr:{src:'assets/' + lms_config.product_type + '/icons/info_icon.png'}" />
+                            </div>
+                            <div class="select-word-text">
+                                <p> Select a letter or enter your word or phrase in the search box.
+                               	Next, select a word to see it's definition. </p>
+                            </div>
+                        </div>
+                        <div class="word-info"  data-bind="if: $root.selected_item">
+                            <div class="word-header">
+                                <div class="col-md-12 col-sm-12 col-xs-12 header-container">
+                                    <audio data-bind="attr:{id:'player' + $root.selected_item().snd()}" preload="none">
+                                        <source data-bind="attr:{src:'assets/'+$root.lms_config.product_type+'/common/dictionary/' +lesson_config_json.language +'/media/' + $root.selected_item().snd() + '.mp3' }"/>
+                                    </audio>
+                                    <span class="word-title" data-bind="text: $root.selected_item().item()"></span>
+                                    
+                                    <img class="pull-right print-image link-cursor" data-bind="attr:{src:'assets/' + lms_config.product_type + '/icons/print_icon.png'}, click: function() {mono_helper_print_dictionary();}" onmouseover= "$('.print-image').attr('src', 'assets/' + lms_config.product_type + '/icons/print_icon-over.png');" onmouseout= "$('.print-image').attr('src', 'assets/' + lms_config.product_type + '/icons/print_icon.png');"/>
+                                    
+                                    <img class="pull-right sound-image link-cursor" data-bind="attr:{src:'assets/' + lms_config.product_type + '/icons/listen_icon.png'}, click: function() { $('#player'+ $root.selected_item().snd()).get(0).load();$('#player'+ $root.selected_item().snd()).get(0).play(); }" onmouseover= "$('.sound-image').attr('src', 'assets/' + lms_config.product_type + '/icons/listen_icon-over.png');" onmouseout= "$('.sound-image').attr('src', 'assets/' + lms_config.product_type + '/icons/listen_icon.png');" />                                     
+                                </div>
+                            </div>
+
+                            <div class="word-content">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <span class="content-title"> Definition </span>
+                                    <h5 data-bind="html: $root.selected_item().expl()"> </h5>
+                                    <span class="content-title"> Example </span>
+                                    <h5 data-bind="html: $root.selected_item().examp()"> </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		</div>
+    </div>
+  </div>
+</div>
