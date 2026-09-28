@@ -1,0 +1,83 @@
+.contenedor_ruleta{
+    position: absolute;
+    width: 490px;
+    height: 398px;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+#ruleta{
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    left: 17.5%;
+    top: 10%;
+    z-index: 1;
+}
+
+#ruleta_base{
+    position: absolute;
+    height: auto;
+    width: 80%;
+    left: 10%;
+    bottom: 0;
+}
+#btn_ruleta{
+    position: absolute;
+    height: auto;
+    width: 20%;
+    height: 25%;
+    z-index: 2;
+    left: 40%;
+    top: 37.5%;
+    cursor: pointer;
+}
+#ruleta_header_estrellas{
+    position: absolute;
+    height: auto;
+    width: 20%;
+    z-index: 2;
+    left: 40%;
+    cursor: pointer;
+    z-index: 0;
+}
+#ruleta_flecha_background{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    z-index: 2;
+    right: 12.6%;
+    top: 42.5%;
+    cursor: pointer;
+    z-index: 0;
+}
+#flecha{
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    z-index: 2;
+    right: 12.6%;
+    top: 42.5%;
+    cursor: pointer;
+    z-index: 1;
+}
+@media (max-height: 600px){
+    .contenedor_ruleta{
+        width: 300px;
+        height: 250px;
+    }
+}
+@media (min-width: 1440px){
+    .contenedor_ruleta{
+        width: 630px;
+        height: 510px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .contenedor_ruleta {
+        width: 450px;
+        height: 354px;
+    }
+}   

@@ -1,0 +1,41 @@
+input.TYP_input
+{
+    line-height: 1;
+    color: rgb(2, 84, 73);
+    background-color: rgba(35, 130, 118, 0.1);
+    box-shadow: inset 0 0.2rem 0.2rem rgba(2, 84, 73, 0.1);
+    border-radius: 0.2em;
+    padding: 0 0.166666em;
+    border: 0;
+    border-bottom: 1px solid rgb(2, 84, 73);
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0.3em;
+}
+
+img.TYP-audio-img {
+    padding-bottom: 10px;
+}
+
+.TYP-question
+{             
+    position: relative;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.question-column 
+{
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.question-column .sena-btn
+{
+	width: 100%;
+}
+
+.TYP-response{
+    display:inline;
+    position: relative;
+}
