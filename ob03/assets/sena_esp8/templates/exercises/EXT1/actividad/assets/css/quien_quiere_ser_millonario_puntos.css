@@ -1,0 +1,58 @@
+
+.total_puntos_quien_qui_ser_mil{
+    margin-top: 10%;
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    background-image: url("../img/bg_puntos.png");
+    background-size: 100% 100%;
+    left: 40%;
+}
+
+#punt_total_quien_qui_ser_mil{
+    background: #108491;
+}
+
+.total_puntos_quien_qui_ser_mil td{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    float: left;
+    height: 13%;
+    margin: 5% 0 0 0;
+}
+
+.mil_puntos{
+    margin-top: 2.5vw !important 
+}
+
+.num_puntos_total{ 
+    color: #cdc3dc;
+    font-size: 2.5vw;
+}
+
+.puntos_totales{
+    color: #fff;
+    font-size: 2.5vw;
+}
+
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1024px){
+
+    .total_puntos_quien_qui_ser_mil{
+        width: 28%;
+        left: 36%;
+    }
+
+    .mil_puntos{
+        margin-top: 4vw !important 
+    }
+
+    .num_puntos_total{ 
+        font-size: 3.5vw;
+    }
+
+    .puntos_totales{
+        font-size: 3.5vw;
+    }
+
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Traditional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- El Titulo -->
+        <title>Who wants to be a millionaire</title>
+        <!-- Los Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Actividad de ahogado"/>
+        <meta name="author" content="ZELLETA"/>
+        <!-- El ICO -->
+        <link rel="shortcut icon" href="../assets/img/favicon.ico"/>
+        <!-- LOS ESTILOS -->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/estilos_generales.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/fuentes/fuentes.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/actividad.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/quien_quiere_ser_millonario_actividad.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/quien_quiere_ser_millonario_ayuda_publico.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/quien_quiere_ser_millonario_puntos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="pantalla_invisible" style="display: none;"></div>
+        <!-- INICIO BLOQUE DE INICIO ACTIVIDAD -->
+        <!-- INICIO BLOQUE DE ACTIVIDAD -->
+        <div id="modalPregunta" class="modal fade">
+            <div class="popup_pregunta">
+                <p id="titulo_txt_pregunta"></p>
+                <div id="actividad_pista"><p class="pista" id="pista_0" style="display: none;"></p></div>
+                <div class="opciones_respuesta_pregunta" id="cont_preguntas_actividad"></div>
+                <input type="hidden" value="-1" id="respuesta_seleccionada"/>
+                <button style="display: none;" id="btn_responder_pregunta" onclick="responder_pregunta();" class="btn_actividad btn_enviar_morado" data-dismiss="modal">Answer</button>
+            </div>
+        </div>
+        <div id="modalAyudaPublico" class="modal fade">
+            <div class="ayuda_publico" data-dismiss="modal">
+                <img id="imagen_ayuda" style="width: 70%; cursor: pointer;" alt="Imagen" src=""/>
+            </div>
+        </div>
+        <div id="modalPuntosActuales" class="modal fade">
+            <div data-dismiss="modal" style="cursor: pointer;">
+                <table class="total_puntos_quien_qui_ser_mil">
+                    <td id="puntos_5" class="mil_puntos">
+                        <center><span class="num_puntos_total">5&nbsp;</span><span class="puntos_totales">&#36;1.000</span></center>
+                    </td>
+                    <td id="puntos_4">
+                        <center><span class="num_puntos_total">4&nbsp;</span><span class="puntos_totales">&#36;500</span></center>
+                    </td>
+                    <td id="puntos_3">
+                        <center><span class="num_puntos_total">3&nbsp;</span><span class="puntos_totales">&#36;300</span></center>
+                    </td>
+                    <td id="puntos_2">
+                        <center><span class="num_puntos_total">2&nbsp;</span><span class="puntos_totales">&#36;200</span></center>
+                    </td>
+                    <td id="punt_total_quien_qui_ser_mil">
+                        <center><span class="num_puntos_total">1&nbsp;</span><span class="puntos_totales">&#36;100</span></center>
+                    </td>
+                </table>
+            </div>
+        </div>        
+        <!-- INICIO BLOQUE DE MODAL INSTRUCCIONES -->
+        <div id="modalInstruccion" class="modal fade">
+            <div class="popup_actividad">
+                <div class="header_popup_actividad">
+                    <div class="info_img_actividad">
+                        <img src="../assets/img/info_ico.png" alt="Instrucciones"/>
+                    </div>
+                    <div class="instruccion_txt_actividad">
+                        <p>Instructions</p>
+                    </div>
+                    <div class="cerrar_btn_actividad">
+                        <img src="../assets/img/cerrar_btn.png" alt="Icono" data-dismiss="modal"/>
+                    </div>
+                </div>
+                <div class="instrucciones_actividad">
+                    <div class="text_actividad">
+                        <div id="cont_instrucciones">
+                            <ul>
+                                <li>For each question, you will find four options. Choose the right answer for you. Then, clcik on the submit button.</li>
+                                <li>In the lower part of the screen you will find three help options to use when you are not sure about the right answer. </li>
+                                <li>Once you finish the activity, you will see the answer sheet with your hits, mistakes, and the right answers, along with the reasons for the right answers.</li>
+                                <li>Read the rules of the activity before you start.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE MODALS INSTRUCCIONES -->
+        <!-- INICIO BLOQUE DE INICIO ACTIVIDAD -->
+        <div id="inicio_actividad" style="display: block;">
+            <div class="titulo_actividad">
+                <img src="../assets/img/quienquieresermillonario-ico.png" alt="Icono"/><p>Who wants to be a millionaire. <label id="cont_descripcion"></label></p>
+            </div>
+            <div class="actividad">
+                <div class="icono_actividad_img">
+                    <center>
+                        <img src="../assets/img/quienquieresermillonario-ico.png" alt="Icono"/>
+                        <div id="btn_inicio_actividad_container">
+                            <button style="display: none;" id="btn_iniciar" onclick="inicializar_actividad();" class="btn_actividad btn_enviar_morado">Start</button>
+                        </div>    
+                    </center>
+                </div>
+                <div class="reglas_actividad">
+                    <p>Rules</p>
+                    <hr/>
+                    <div id="iconos_reglas_actividad">
+                        <div onclick="mostrar_modal('modalInstruccion');" id="icono_1">
+                            <img src="../assets/img/info_ico.png" alt="Instrucciones"/>
+                            <span>Click on this icon to read the instructions at any time before or during the activity.</span>
+                        </div>
+                        <div id="icono_2">
+                            <img src="../assets/img/puntos_ico.png" alt="Puntaje"/><span id="cont_puntaje"></span>
+                        </div>
+                        <div id="icono_3">
+                            <img src="../assets/img/crono_ico.png" alt="Tiempo"/><span id="cont_tiempo"></span>
+                        </div>
+                        <div id="icono_4">
+                            <img src="../assets/img/estrella_turno_ico.png" alt="Preguntas"/><span id="cont_numero_de_preguntas"></span>
+                        </div>
+                        <div id="icono_5">
+                            <img src="../assets/img/reintentar.png" alt="Intentos"/><span id="cont_numero_de_intentos"></span>
+                        </div>
+                        <div id="icono_6">
+                            <img src="../assets/img/pista_ico.png" alt="Pistas"/><span id="cont_pistas">If this button appears in the activity, click on it to see the hints.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE INICIO ACTIVIDAD -->
+        <!-- INICIO BLOQUE DE ACTIVIDAD -->
+        <div id="cont_actividad" class="sub_contenedor_general" style="display: none;">
+            <div class="contenedor_general_actividad">
+                <div class="header_actividad">
+                    <!-- Inicio header de la actividad -->
+                    <div class="img_logo_actividad">
+                    </div>
+                    <div class="nombre_actividad">
+                    </div>
+                    <div class="iconos_actividad">
+                        <div class="instruccion_actividad" onclick="mostrar_modal('modalInstruccion');">
+                            <div id="bring_instruccion"></div>
+                            <div id="instruccion_tooltip">
+                                Instructions
+                            </div>
+                        </div>
+                        <div class="puntos_actividad">
+                            <div id="bring_puntos"></div>
+                            <p id="cont_puntos"></p>
+                            <div id="puntos_tooltip">
+                                Points
+                            </div>
+                        </div>
+                        <div class="tiempo_actividad">
+                            <div id="bring_tiempo"></div>
+                            <p id="cont_segundos"></p>
+                            <div id="tiempo_tooltip">
+                                Time
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin header de la actividad -->
+                <div class="contenedor_actividad">
+                    <div id="modalAyudaPublico" class="modal fade">
+                        <div class="ayuda_publico" data-dismiss="modal">
+                            <img id="imagen_ayuda" style="width: 70%; cursor: pointer;" alt="Imagen" src=""/>
+                        </div>
+                    </div>
+                    <div id="modalPuntosActuales" class="modal fade">
+                        <div data-dismiss="modal" style="cursor: pointer;">
+                            <table class="total_puntos_quien_qui_ser_mil">
+                                <td id="puntos_5" class="mil_puntos">
+                                    <center><span class="num_puntos_total">5&nbsp;</span><span class="puntos_totales">&#36;1.000</span></center>
+                                </td>
+                                <td id="puntos_4">
+                                    <center><span class="num_puntos_total">4&nbsp;</span><span class="puntos_totales">&#36;500</span></center>
+                                </td>
+                                <td id="puntos_3">
+                                    <center><span class="num_puntos_total">3&nbsp;</span><span class="puntos_totales">&#36;300</span></center>
+                                </td>
+                                <td id="puntos_2">
+                                    <center><span class="num_puntos_total">2&nbsp;</span><span class="puntos_totales">&#36;200</span></center>
+                                </td>
+                                <td id="punt_total_quien_qui_ser_mil">
+                                    <center><span class="num_puntos_total">1&nbsp;</span><span class="puntos_totales">&#36;100</span></center>
+                                </td>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="actividad_quien_quiere_ser_millonario">
+                        <div> <!-- Inicio pregunta -->
+                            <table id="gray_line_pregunta_left"> 
+                                <td><img  src="assets/img/linea.png" alt="Imagen"/></td>
+                            </table>
+                            <table class="contenedor_pregunta_quien_qui_ser_mil"> 
+                                <td>
+                                    <p id="siguiente_pregunta">
+                                        ¿ Vivamus 
+                                        rutrum et dui eu blandit. Nam varius mi vel tellus rhoncus ullamcorper ut semper mi. In 
+                                    </p>
+                                </td>
+                            </table>
+                            <table id="gray_line_pregunta_right"> 
+                                <td><img src="assets/img/linea.png" alt="Imagen"/></td>
+                            </table>
+                        </div> <!-- Fin pregunta -->
+                        <div class="respuestas_quien_qui_ser_mil"> <!-- Inicio respuestas -->
+                            <div class="row"> <!-- Inicio row -->
+                                <div class="respuesta_1_quien_qui_ser_mil"> <!-- Respuesta 1 -->
+                                    <img class="gray_line" src="assets/img/linea.png" alt="Imagen"/>
+                                    <input type="hidden" value="0" id="h_respuesta_1"/>
+                                    <input type="hidden" value="no" id="es_correcta_1"/>
+                                    <table id="res1_quien_qui_ser_mil" class="res_quien_qui_ser_mil">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">A:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_1"> Vivamus rutrum et dui eu blandit.</span>
+                                        </td>
+                                    </table>
+                                    <table id="res1_quien_qui_ser_mil_selected" class="res_quien_qui_ser_mil_selected">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">A:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_1_selected"> Vivamus rutrum et dui eu blandit.</span>
+                                        </td>
+                                    </table>
+                                    <table id="res1_quien_qui_ser_mil_error" class="res_quien_qui_ser_mil_error">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">A:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_1_error"> Vivamus rutrum et dui eu blandit.</span>
+                                        </td>
+                                    </table>
+                                    <img class="circle_line" src="assets/img/linea_circulo.png"/>
+                                </div> <!--/ Respuesta 1 /-->
+                                <div class="respuesta_2_quien_qui_ser_mil"> <!-- Respuesta 2 -->
+                                    <img class="circle_line" src="assets/img/linea_circulo_180.png"/>
+                                    <input type="hidden" value="0" id="h_respuesta_2"/>
+                                    <input type="hidden" value="no" id="es_correcta_2"/>
+                                    <table id="res2_quien_qui_ser_mil" class="res_quien_qui_ser_mil">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">B:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_2"> Vivamus rutrum et dui eu blandit.Nam varius mi vel tellus rhonc</span>
+                                        </td>
+                                    </table>
+                                    <table id="res2_quien_qui_ser_mil_selected" class="res_quien_qui_ser_mil_selected">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">B:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_2_selected"></span>
+                                        </td>
+                                    </table>
+                                    <table id="res2_quien_qui_ser_mil_error" class="res_quien_qui_ser_mil_error">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">B:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_2_error"> Vivamus rutrum et dui eu blandit.Nam varius mi vel tellus rhonc</span>
+                                        </td>
+                                    </table>
+                                    <img class="gray_line" src="assets/img/linea.png" alt="Imagen"/>
+                                </div> <!--/ Respuesta 2 /-->
+                            </div> <!-- Fin row -->
+                            <div class="row"> <!-- Inicio row -->
+                                <div class="respuesta_3_quien_qui_ser_mil"> <!-- Respuesta 3 -->
+                                    <img class="gray_line" src="assets/img/linea.png" alt="Imagen"/>
+                                    <input type="hidden" value="0" id="h_respuesta_3"/>
+                                    <input type="hidden" value="no" id="es_correcta_3"/>
+                                    <table id="res3_quien_qui_ser_mil" class="res_quien_qui_ser_mil">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">C:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        </td>
+                                    </table>
+                                    <table id="res3_quien_qui_ser_mil_selected" class="res_quien_qui_ser_mil_selected">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">C:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_3_selected">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        </td>
+                                    </table>
+                                    <table id="res3_quien_qui_ser_mil_error" class="res_quien_qui_ser_mil_error">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">C:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_3_error">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        </td>
+                                    </table>
+                                    <img class="circle_line" src="assets/img/linea_circulo.png"/>
+                                </div> <!--/ Respuesta 3 /-->
+                                <div class="respuesta_4_quien_qui_ser_mil"> <!-- Respuesta 4 -->
+                                    <img class="circle_line" src="assets/img/linea_circulo_180.png"/>
+                                    <input type="hidden" value="0" id="h_respuesta_4"/>
+                                    <input type="hidden" value="no" id="es_correcta_4"/>
+                                    <table id="res4_quien_qui_ser_mil" class="res_quien_qui_ser_mil">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">D:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_4"></span>
+                                        </td>
+                                    </table>
+                                    <table id="res4_quien_qui_ser_mil_selected" class="res_quien_qui_ser_mil_selected">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">D:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_4_selected"></span>
+                                        </td>
+                                    </table>
+                                    <table id="res4_quien_qui_ser_mil_error" class="res_quien_qui_ser_mil_error">
+                                        <td>
+                                            <span class="letra_respuesta_quien_qui_ser_mil">D:&nbsp;</span>
+                                            <span class="respuesta_txt_quien_qui_ser_mil" id="respuesta_4_error"></span>
+                                        </td>
+                                    </table>
+                                    <img class="gray_line" src="assets/img/linea.png" alt="Imagen"/>
+                                </div> <!--/ Respuesta 4 /-->
+                            </div> <!-- Fin row -->
+                            <div class="btns_ayuda_quien_qui_ser_mil"> <!-- Inicio botones de ayuda -->
+                                <center>
+                                    <div class="cont_btn_cincuenta_cincuenta">
+                                        <img id="btn_cincuenta_cincuenta" src="assets/img/cincuenta_cincuenta.png" alt="Imagen"/>
+                                    </div>
+                                    <div class="cont_btn_ayuda_publico">
+                                        <img id="btn_ayuda_publico" src="assets/img/publico.png" alt="Imagen"/>
+                                    </div>
+                                    <div class="cont_btn_cambiar_pregunta">
+                                        <img id="btn_cambiar_pregunta" src="assets/img/cambio_pregunta.png" alt="Imagen"/>
+                                    </div>
+                                </center>
+                            </div> <!-- Fin botones de ayuda -->
+                        </div> <!-- Fin respuestas -->
+                    </div>                </div>
+                <div class="preguntas"></div>
+                <div id="btn_actividad_container">
+                    <button style="display: none;" onclick="responder_pregunta();" class="btn_actividad btn_enviar_morado">Answer</button>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE ACTIVIDAD -->
+        <!-- INICIO BLOQUE DE RESULTADO -->
+        <div id="cont_resultados" class="contenedor_general_resultado" style="display: none;">
+            <div class="resultado_exito">
+                <p class="titulo_resultados_txt">Results</p>
+                <p class="titulo_exito_txt" id="txt_pagina_resultados">Try again</p>
+                <hr/>
+            </div>
+            <div class="tiempo_actividad_resultado">
+                <div style="visibility: hidden;" id="tiempo_juego">
+                    <span id="tiempo_txt">Time:</span><span id="tiempo_final">00</span>
+                </div>
+            </div>
+            <div class="resultados_preguntas"></div>
+            <div class="cont_reintentar">
+                <div class="numero_intentos">
+                    <p>
+                        <img src="../assets/img/reintentar.png" alt=""/>
+                        &nbsp;&nbsp;
+                        <span id="cantidad_intentos_restantes"></span>
+                    </p>
+                </div>
+                <button onclick="reintentar();" class="btn_actividad btn_enviar_morado">Retry</button>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE RESULTADO -->
+        <script src="../assets/js/jquery.js" type="text/javascript"></script>
+        <script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.easing.js" type="text/javascript"></script>
+        <script src="../assets/js/tooltips.js" type="text/javascript"></script>
+        <script src="../assets/js/funciones.js" type="text/javascript"></script>
+        <script src="../assets/js/animaciones.js" type="text/javascript"></script>
+        <script src="assets/js/quien_quiere_ser_millonario.js" type="text/javascript"></script>
+    </body>
+</html>

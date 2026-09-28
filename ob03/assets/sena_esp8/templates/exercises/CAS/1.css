@@ -1,0 +1,32 @@
+span.CAS_response.selected  {
+    background-color:#022f64;
+    color:white;
+}
+
+span.CAS_response
+{
+    padding-left:3px;
+    padding-right:3px;
+    background-color:#022f64;
+    color:#0C488D;
+    font-weight: bold;
+    border-radius: 5px;
+	border-color: #458f15;
+	border-style:solid;
+	border-width:1px;
+}
+
+span.CAS_response_container :hover
+{
+    color: #0C488D;
+}
+
+span.CAS_response_container.selected :hover
+{
+    color: white;
+}
+
+span.CAS_response_container :hover
+{
+    color: red;
+}

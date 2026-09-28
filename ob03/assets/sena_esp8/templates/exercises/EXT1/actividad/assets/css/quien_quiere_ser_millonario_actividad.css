@@ -1,0 +1,240 @@
+
+.contenedor_pregunta_quien_qui_ser_mil p, .letra_respuesta_quien_qui_ser_mil, #preguntas_correctas, #puntos{
+    font-family: arial, sans-serif;
+}
+
+.actividad_quien_quiere_ser_millonario{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    top: 15px;
+    margin: 0 10%;
+}
+#btn_actividad_container{
+    position: absolute;
+    bottom: 30px;
+}
+.contenedor_pregunta_quien_qui_ser_mil{
+    background-image: url("../img/bg_pregunta.png");
+    background-size: 100% 100%;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 0;
+    height: 20%;
+}
+
+#gray_line_pregunta_left{
+    position: absolute;
+    width: 5%;
+    height: 20%;
+}
+
+#gray_line_pregunta_right{
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    right: 0;
+}
+
+#gray_line_pregunta_left td img,
+#gray_line_pregunta_right td img{
+    width: 100%;
+}
+
+.contenedor_pregunta_quien_qui_ser_mil td{
+    padding: 0% 2%;
+}
+
+.contenedor_pregunta_quien_qui_ser_mil p{ 
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+}
+
+.respuestas_quien_qui_ser_mil{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    height: 70%;
+}
+
+.gray_line{
+    float: left;
+    width: 5%;
+    margin-top: 45px;
+}
+
+.circle_line{
+    float: left;
+    width: 2%;
+    margin-top: 37px;
+}
+
+.res_quien_qui_ser_mil td, .res_quien_qui_ser_mil_selected td, .res_quien_qui_ser_mil_error td{
+    padding: 15px 25px 18px 40px
+}
+
+.res_quien_qui_ser_mil, .res_quien_qui_ser_mil_selected, .res_quien_qui_ser_mil_error{
+    float: left;
+    width: 93%;
+    padding: 0.5% 3.5% 1% 3.5%;
+    margin: 1% 0 0 0;
+    height: 80px;
+    cursor: pointer;
+}
+
+.respuesta_1_quien_qui_ser_mil .res_quien_qui_ser_mil, 
+.respuesta_2_quien_qui_ser_mil .res_quien_qui_ser_mil, 
+.respuesta_3_quien_qui_ser_mil .res_quien_qui_ser_mil, 
+.respuesta_4_quien_qui_ser_mil .res_quien_qui_ser_mil{
+    background-image: url("../img/respuesta.png");
+    background-size: 100% 100%;
+}
+
+.respuesta_1_quien_qui_ser_mil .res_quien_qui_ser_mil_selected, 
+.respuesta_2_quien_qui_ser_mil .res_quien_qui_ser_mil_selected, 
+.respuesta_3_quien_qui_ser_mil .res_quien_qui_ser_mil_selected, 
+.respuesta_4_quien_qui_ser_mil .res_quien_qui_ser_mil_selected{
+    background-image: url("../img/respuesta_seleccionada.png");
+    background-size: 100% 100%;
+}
+
+.respuesta_1_quien_qui_ser_mil .res_quien_qui_ser_mil_error, 
+.respuesta_2_quien_qui_ser_mil .res_quien_qui_ser_mil_error, 
+.respuesta_3_quien_qui_ser_mil .res_quien_qui_ser_mil_error, 
+.respuesta_4_quien_qui_ser_mil .res_quien_qui_ser_mil_error{
+    background-image: url("../img/respuesta_incorrecta.png");
+    background-size: 100% 100%;
+}
+
+.letra_respuesta_quien_qui_ser_mil{
+    color: #f19003;
+    font-size: 18px;
+}
+
+.respuesta_txt_quien_qui_ser_mil{
+    color: #fff;
+    font-size: 15px !important;
+}
+
+.respuesta_1_quien_qui_ser_mil,
+.respuesta_2_quien_qui_ser_mil,
+.respuesta_3_quien_qui_ser_mil,
+.respuesta_4_quien_qui_ser_mil{
+    width: 50%;
+    position: absolute;
+    height: 38%;
+}
+
+.respuesta_2_quien_qui_ser_mil,
+.respuesta_4_quien_qui_ser_mil{
+    right: 0;
+}
+
+.respuesta_1_quien_qui_ser_mil,
+.respuesta_3_quien_qui_ser_mil{
+    left: 0;
+}
+
+.respuesta_1_quien_qui_ser_mil,
+.respuesta_2_quien_qui_ser_mil{
+    top: 0;
+}
+
+.respuesta_3_quien_qui_ser_mil,
+.respuesta_4_quien_qui_ser_mil{
+    top: 39%;
+}
+
+.btns_ayuda_quien_qui_ser_mil{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    left: 35%;
+    height: 22%;
+}
+
+.btns_ayuda_quien_qui_ser_mil div{
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+}
+
+.btns_ayuda_quien_qui_ser_mil .cont_btn_cincuenta_cincuenta{
+    left: 0;
+    right: 0;
+}
+
+.btns_ayuda_quien_qui_ser_mil .cont_btn_ayuda_publico{
+    left: 33.33%;
+}
+
+.btns_ayuda_quien_qui_ser_mil .cont_btn_cambiar_pregunta{
+    right: 0;
+}
+
+.btns_ayuda_quien_qui_ser_mil div img{
+    position: absolute;
+    height: 60%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    top: 10%;
+}
+
+@-moz-document url-prefix() {
+
+    .res_quien_qui_ser_mil{
+        height: 70px !important;
+    }
+
+    .respuesta_txt_quien_qui_ser_mil{
+        font-size: 12px;
+    }
+
+    .gray_line{
+        margin-top: 38px;
+    }
+
+    .circle_line{
+        margin-top: 33px;
+    }
+
+}
+
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1024px){
+
+    .res_quien_qui_ser_mil{
+        height: 100px;
+    }
+
+    .res_quien_qui_ser_mil td{
+        padding: 0% 9% 0% 9%;
+    }
+
+    .gray_line{
+        margin-top: 55px;
+    }
+
+    .circle_line{
+        margin-top: 47px;
+    }
+
+    .respuesta_txt_quien_qui_ser_mil{
+        font-size: 13px;
+    }
+
+    .btns_ayuda_quien_qui_ser_mil div img{
+        height: 60%;
+        top: 20%;
+    }
+
+    .contenedor_pregunta_quien_qui_ser_mil p{ 
+        font-size: 13px;
+    }
+
+}
