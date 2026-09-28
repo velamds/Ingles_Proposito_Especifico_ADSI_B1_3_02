@@ -1,0 +1,130 @@
+.contenedor_tablas_resultados{
+    margin-top: 3%;
+}
+.contenedor_tablero_correcto,
+.contenedor_mi_tablero{
+    width: 50%;
+    float: left;
+    margin-bottom: 5%;
+}
+.contenedor_tablero_correcto .actividad_sopa_de_letras,
+.contenedor_mi_tablero .actividad_sopa_de_letras{
+    width: 100%;
+    float: left;
+    left: 0%;
+}
+.contenedor_tablero_correcto .sopa_de_letras,
+.contenedor_mi_tablero .sopa_de_letras{
+    float: none;
+    display: block;
+    margin: auto;
+}
+.contenedor_tablero_correcto p,
+.contenedor_mi_tablero p{
+    width: 100% !important;
+    text-align: center;
+}
+.titulo_resultados_sopa_de_letras{
+    color: #074b62;
+    font-size: 1.5vw;
+    line-height: 1;
+}
+.palabras_sopa_de_letras{
+    font-family: arial, sans-serif;
+}
+.palabras_sopa_de_letras div p{
+    font-family: arial, sans-serif;
+}
+.actividad_sopa_de_letras{
+    width: 860px;
+    float: none;
+    margin: auto !important;
+    display: block;
+}
+.sopa_de_letras{
+    width: 390px;
+    float: left;
+    height: auto;
+    margin: 5px 5px;
+}
+.sopa_de_letras table{
+    width: 100%;
+}
+.sopa_de_letras td{
+    border: solid 2px #0e4b5e;
+    color: #0e4b5e;
+    font-size: 19px !important;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+}
+.palabras_sopa_de_letras{
+    height: 342px;
+    width: 420px;
+    font-size: 16px;
+    color: #0fb2db;
+    background-color: rgba(250,250,250,0.8);
+    padding: 10px 25px 0 0;
+    border-radius: 10px;
+    overflow: auto;
+    float: left;
+    margin: 10px 5px;
+}
+.palabras_sopa_de_letras div p{
+    color: #0e4b5e;
+    font-size: 20px;
+    margin: 0;
+    padding: 2px;
+}
+.posicion{
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+}
+@media only screen and (min-width: 1440px){
+    .actividad_sopa_de_letras{
+        width: 1000px;
+    }
+    .sopa_de_letras{
+        width: 460px;
+    }
+    .palabras_sopa_de_letras{
+        height: 455px;
+        width: 500px;
+    }
+    .sopa_de_letras td{
+        font-size: 22px;
+        height: 45px;
+    }
+}
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 1024px){
+    .contenedor_tablero_correcto .sopa_de_letras,
+    .contenedor_mi_tablero .sopa_de_letras{
+        width: 60%;
+    }
+    .contenedor_actividad_sopa_de_letras{
+        height: 60% !important;
+        top: 25%;
+    }
+    .actividad_sopa_de_letras{
+        width: 770px;
+    }
+    .sopa_de_letras{
+        width: 350px;
+    }
+    .palabras_sopa_de_letras{
+        height: 300px;
+        width: 350px;
+    }
+    .sopa_de_letras td{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-height: 651px){
+    .actividad_sopa_de_letras {
+        top: 7%;
+        position: relative;
+    }
+}

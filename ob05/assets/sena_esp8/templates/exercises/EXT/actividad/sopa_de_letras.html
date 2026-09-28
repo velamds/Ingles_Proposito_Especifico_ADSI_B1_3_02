@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Traditional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- El Titulo -->
+        <title>Word search</title>
+        <!-- Los Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Actividad de ahogado"/>
+        <meta name="author" content="ZELLETA"/>
+        <!-- El ICO -->
+        <link rel="shortcut icon" href="../assets/img/favicon.ico"/>
+        <!-- LOS ESTILOS -->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/estilos_generales.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/fuentes/fuentes.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/sopa_de_letras.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="pantalla_invisible" style="display: none;"></div>
+        <!-- INICIO BLOQUE DE INICIO ACTIVIDAD -->
+        <div id="modalPregunta" class="modal fade">
+            <div class="popup_pregunta">
+                <p id="titulo_txt_pregunta"></p>
+                <div id="actividad_pista"><p class="pista" id="pista_0" style="display: none;"></p></div>
+                <div class="opciones_respuesta_pregunta" id="cont_preguntas_actividad"></div>
+                <input type="hidden" value="-1" id="respuesta_seleccionada"/>
+                <button style="display: none;" id="btn_responder_pregunta" onclick="responder_pregunta();" class="btn_actividad btn_enviar_morado" data-dismiss="modal">Answer</button>
+            </div>
+        </div>
+        <!-- INICIO BLOQUE DE MODAL INSTRUCCIONES -->
+        <div id="modalInstruccion" class="modal fade">
+            <div class="popup_actividad">
+                <div class="header_popup_actividad">
+                    <div class="info_img_actividad">
+                        <img src="../assets/img/info_ico.png" alt="Instrucciones"/>
+                    </div>
+                    <div class="instruccion_txt_actividad">
+                        <p>Instructions</p>
+                    </div>
+                    <div class="cerrar_btn_actividad">
+                        <img src="../assets/img/cerrar_btn.png" alt="Icono" data-dismiss="modal"/>
+                    </div>
+                </div>
+                <div class="instrucciones_actividad">
+                    <div class="text_actividad">
+                        <div id="cont_instrucciones">
+                            <ul>
+                                <li>To start, you will see the words to find in the wordsearch on the right side of the screen. Sometimes, you will find an incomplete statement or a question. The answer is the word you have to find.</li>
+                                <li>To highlight a word, click on each of the lettters in the word.</li>
+                                <li>After finding all of the words, click on the submit botton. </li>
+                                <li>Once you finish the activity, you will see both your answers and the correct answers, too.</li>
+                                <li>Read the rules of the activity before you start.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE MODALS INSTRUCCIONES -->
+        <!-- INICIO BLOQUE DE INICIO ACTIVIDAD -->
+        <div id="inicio_actividad" style="display: block;">
+            <div class="titulo_actividad">
+                <img src="../assets/img/completapalabra-ico.png" alt="Icono"/><p>Word search. <label id="cont_descripcion"></label></p>
+            </div>
+            <div class="actividad">
+                <div class="icono_actividad_img">
+                    <center>
+                        <img src="../assets/img/completapalabra-ico.png" alt="Icono"/>
+                        <div id="btn_inicio_actividad_container">
+                            <button style="display: none;" id="btn_iniciar" onclick="inicializar_actividad();" class="btn_actividad btn_enviar_morado">Start</button>
+                        </div>    
+                    </center>
+                </div>
+                <div class="reglas_actividad">
+                    <p>Rules</p>
+                    <hr/>
+                    <div id="iconos_reglas_actividad">
+                        <div onclick="mostrar_modal('modalInstruccion');" id="icono_1">
+                            <img src="../assets/img/info_ico.png" alt="Instrucciones"/>
+                            <span>Click on this icon to read the instructions at any time before or during the activity.</span>
+                        </div>
+                        <div id="icono_2">
+                            <img src="../assets/img/puntos_ico.png" alt="Puntaje"/><span id="cont_puntaje"></span>
+                        </div>
+                        <div id="icono_3">
+                            <img src="../assets/img/crono_ico.png" alt="Tiempo"/><span id="cont_tiempo"></span>
+                        </div>
+                        <div id="icono_4">
+                            <img src="../assets/img/estrella_turno_ico.png" alt="Preguntas"/><span id="cont_numero_de_preguntas"></span>
+                        </div>
+                        <div id="icono_5">
+                            <img src="../assets/img/reintentar.png" alt="Intentos"/><span id="cont_numero_de_intentos"></span>
+                        </div>
+                        <div id="icono_6">
+                            <img src="../assets/img/pista_ico.png" alt="Pistas"/><span id="cont_pistas">If this button appears in the activity, click on it to see the hints.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE INICIO ACTIVIDAD -->
+        <!-- INICIO BLOQUE DE ACTIVIDAD -->
+        <div id="cont_actividad" class="sub_contenedor_general" style="display: none;">
+            <div class="contenedor_general_actividad">
+                <div class="header_actividad">
+                    <!-- Inicio header de la actividad -->
+                    <div class="img_logo_actividad">
+                    </div>
+                    <div class="nombre_actividad">
+                    </div>
+                    <div class="iconos_actividad">
+                        <div class="instruccion_actividad" onclick="mostrar_modal('modalInstruccion');">
+                            <div id="bring_instruccion"></div>
+                            <div id="instruccion_tooltip">
+                                Instructions
+                            </div>
+                        </div>
+                        <div class="puntos_actividad">
+                            <div id="bring_puntos"></div>
+                            <p id="cont_puntos"></p>
+                            <div id="puntos_tooltip">
+                                Points
+                            </div>
+                        </div>
+                        <div class="tiempo_actividad">
+                            <div id="bring_tiempo"></div>
+                            <p id="cont_segundos"></p>
+                            <div id="tiempo_tooltip">
+                                Time
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin header de la actividad -->
+                <div class="contenedor_actividad">
+                    <div class="actividad_sopa_de_letras">
+                        <div class="sopa_de_letras" id="contenedor_tablero"></div>
+                        <div class="palabras_sopa_de_letras" id="contenedor_palabras"></div>
+                    </div>
+                </div>
+                <div class="preguntas"></div>
+                <div id="btn_actividad_container">
+                    <button style="display: none;" onclick="responder_pregunta();" class="btn_actividad btn_enviar_morado">Answer</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE ACTIVIDAD -->
+        <!-- INICIO BLOQUE DE RESULTADO -->
+        <div id="cont_resultados" class="contenedor_general_resultado" style="display: none;">
+            <div class="resultado_exito">
+                <p class="titulo_resultados_txt">Results</p>
+                <p class="titulo_exito_txt" id="txt_pagina_resultados">Try again</p>
+                <hr/>
+            </div>
+            <div class="tiempo_actividad_resultado">
+                <div style="visibility: hidden;" id="tiempo_juego">
+                    <span id="tiempo_txt">Time:</span><span id="tiempo_final">00</span>
+                </div>
+            </div>
+            <div class="resultados_preguntas"></div>
+            <div class="cont_reintentar">
+                <div class="numero_intentos">
+                    <p>
+                        <img src="../assets/img/reintentar.png" alt=""/>
+                        &nbsp;&nbsp;
+                        <span id="cantidad_intentos_restantes"></span>
+                    </p>
+                </div>
+                <button onclick="reintentar();" class="btn_actividad btn_enviar_morado">Retry</button>
+            </div>
+        </div>
+        <!-- FIN BLOQUE DE RESULTADO -->
+        <script src="../assets/js/jquery.js" type="text/javascript"></script>
+        <script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+        <script src="../assets/js/funciones.js" type="text/javascript"></script>
+        <script src="../assets/js/jQueryRotate.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery.easing.js" type="text/javascript"></script>
+        <script src="../assets/js/tooltips.js" type="text/javascript"></script>
+        <script src="../assets/js/jquery-ui.js" type="text/javascript"></script>
+        <script src="../assets/js/tablets_drag_and_drop.js" type="text/javascript"></script>
+        <script src="../assets/js/animaciones.js" type="text/javascript"></script>
+        <script src="assets/js/sopa_de_letras.js" type="text/javascript"></script>
+    </body>
+</html>

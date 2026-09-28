@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cem:cem xmlns:cem="https://sena.blackboard.com/ova/bilinguismo/cem/ns/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://sena.blackboard.com/ova/bilinguismo/cem/ns/2.0/ https://sena.blackboard.com/ova/bilinguismo/CEM_SENA.xsd">
+<cem:general>
+<cem:language/>
+<cem:identifier>
+<cem:catalog catName="RED" catSource="http://www.mineducacion.gov.co/">HT9B32GN1HM</cem:catalog>
+</cem:identifier>
+<cem:identifier>
+<cem:catalog catName="SENA" catSource="https://senaintro.blackboard.com/webapps/cmsmain/webui/institution">IDI-CON-OBJ-001-n7-02-05</cem:catalog>
+</cem:identifier>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="http://www.edistribution.co/">enpe8n7le02ob05</cem:catalog>
+</cem:identifier>
+<cem:title lang="" subtitle="">Contrasting Benefits and Challenges of Cloud Computing</cem:title>
+<cem:description lang="">This virtual learning object "Contrasting Benefits and Challenges of Cloud Computing", that is part of the level "B1.3 Intermediate" of the program "Information Systems" for the teaching of English for Specific Purposes. These objects are intended to work on Passive of modal verbs, have to,It is presented within the context of Organize Points In Arguments About Topics Related To Info Systems talk About Things People Are Supposed To Do And Things That Are Supposed To Happen determine The Technological Needs Required To Manage Information Based On Requirements From The Company. The student will be exposed to vocabulary related to: Benefits Vs Challenges Of Cloud Computing: Operating Characteristics, Service Availability, Cessation Of Services, Non-Payment, Vendor Failure. Finally, learners will develop their language skills by using an online content as well as the guidance of a SENA instructor.</cem:description>
+<cem:keyword lang="">
+<cem:li>Benefits vs challenges of cloud computing</cem:li>
+<cem:li>Operating characteristics</cem:li>
+<cem:li>Service availability</cem:li>
+<cem:li>Cessation of services</cem:li>
+<cem:li>Non-payment</cem:li>
+<cem:li>Vendor failure</cem:li>
+<cem:li>Passive of modal verbs</cem:li>
+<cem:li>Have to</cem:li>
+<cem:li>Inseparable phrasal verbs</cem:li>
+<cem:li>Assessment</cem:li>
+<cem:li>Put up with</cem:li>
+<cem:li>Back out of</cem:li>
+</cem:keyword>
+<cem:coverage>
+<cem:timeName schema="ITESO"/>
+<cem:timeMoment schema="fixed">0000</cem:timeMoment>
+<cem:axialPlace axis="X" schema="UTM"/>
+<cem:hierarchical city="" content="" continent="unknown" country="" region="" schema="WORLD" state="" zone=""/>
+</cem:coverage>
+<cem:structure schema="CEM">Árbol</cem:structure>
+<cem:aggregationLevel schema="CEM">Alto</cem:aggregationLevel>
+</cem:general>
+<cem:lifeCycle>
+<cem:version date="2017-09-22">1.0</cem:version>
+<cem:status>Publicado</cem:status>
+<cem:contribute>
+<cem:role schema="CEM">Implementador técnico</cem:role>
+<cem:entity country="CO" entityForm="1020748674" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ospina Cabrera, Mariana</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Implementador técnico</cem:role>
+<cem:entity country="CO" entityForm="80871315" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Pikieris Caicedo, Andrei</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Implementador técnico</cem:role>
+<cem:entity country="CO" entityForm="41962305" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Urrea Macías, María Paula</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Implementador técnico</cem:role>
+<cem:entity country="CO" entityForm="1010207397" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Valenzuela López, Daniel Felipe</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Implementador técnico</cem:role>
+<cem:entity country="CO" entityForm="1015430677" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Escucha Hilarion, Anlly Vanesa</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Productor ejecutivo</cem:role>
+<cem:entity country="CO" entityForm="79786415" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Díaz Ochoa, Gustavo Andrés</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1018460318" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Meneses Alvarez, Brenda Stefania</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1030565346" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Rincón Carreño, Diana Carolina</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="80833469" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Nova Beltrán, Jorge Alberto</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1049627441" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Avella Herrera, Cristian Fernando</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1010172291" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Cortés Salazar, Jose Fernando</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1013620707" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Pereira Duran, Andrés Guillermo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1012380085" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gonzalez Garcia, Andres Felipe</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Desarrollador web</cem:role>
+<cem:entity country="CO" entityForm="1018441645" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Muñoz Londoño, Julián Felipe</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Productor ejecutivo</cem:role>
+<cem:entity country="CO" entityForm="1016013975" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Paez Rodriguez, Cristian David</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Productor</cem:role>
+<cem:entity country="CO" entityForm="80218248" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Villafradez Peña, Jorge Enrique</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1020796302" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Sombrerero Barrantes, Angie Milena</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1023878922" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Cervantes Bermudez, Marlon Andres</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1140422168" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Torres Escobar, Jesus Eduardo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1070018736" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Castro, Camilo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1016049594" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">García Sánchez, Elkin Jair</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1074188519" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Bermúdez Díaz, Yuly Fernanda</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="75076254" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Rodriguez, Carlos</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="13279916" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Salamanca, Harold</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="574148" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Flores Barrios, Lorena</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1033805912" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Florez Correa, Xiomara Alejandra</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1192791831" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Nascimiento Florez, Gabriel Jose</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1033772095" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Hernandez Ortiz, Maria Fernanda</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1115856287" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ascanio Sierra, Polina</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1032451547" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Lozano Moreno, Fabio</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="79720952" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Toapanta Quiranza, Alexis Joffre</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Diseñador audiovisual</cem:role>
+<cem:entity country="CO" entityForm="1015467045" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gómez Castellanos, Geovany Hernando</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Experto pedagógico</cem:role>
+<cem:entity country="CO" entityForm="51867177" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Rodriguez Pulido, Adriana</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1019080399" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Castro Castillo, Ana Milena</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80895737" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ramirez Santana, Andres Camilo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1015426962" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Moreno González, Aura Margarita</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80111422" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Zamudio Lozano, Andres Alfonso</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1019050269" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gutiérrez Ramírez, Arnol Favian</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1018455111" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Forero Galvis, Carlos Mauricio</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80232761" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Troncoso Salgar, Daniel</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1031122333" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Lozano Zabala, David Alejandro</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1019043199" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Mejia Morales, David Ricardo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="53167487" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gomez Arias, Diana Teresa</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1020713308" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Moya Morales, Diego Armando</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="53103631" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Meneses Góngora, Eliana Patricia</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="79882453" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ceballos Ramirez, Felix Andres</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="79761196" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Hernandez Sanchez, Francisco Javier</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1019076441" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Reyes Gonzalez, Gabriela</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80882899" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Jaramillo Sánchez, Ivan Dario</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80112176" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Baez Ortiz, Jean Jairo</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1030624499" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Benavides Bonilla, Johanna Paola</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="79756440" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Murcia Martínez, John Freddy</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1023925501" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Rojas Betancourt, Jorge Daniel</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1020786322" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gonzalez Vargas, Juan David</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1022389729" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Gil Sepulveda, Juan David</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1014193016" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Alfonso Parra, July Stephanie</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1032449411" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ospina Godoy, Laura Camila</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="79967340" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Escobar Diaz, Leonardo Alberto</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1069098612" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Suárez Gómez, Mayra Alejandra</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1070923117" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Muñoz Sanchez, Sara Estefania</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1014263325" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Ballen Vargas, Stephania</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1012834832" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Sierra Angulo, Stefania</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1032450851" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Mesa, Victoria Andrea</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1019025999" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Guerrero Torres, Viviana Andrea</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="1010176860" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Zarate Carreño, Yessica Paola</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:contribute>
+<cem:role schema="CEM">Proveedor de contenidos</cem:role>
+<cem:entity country="CO" entityForm="80888256" institution="eDistribution SAS." src="contacto@edistribution.co" type="Persona">Blanco, Cesar Augusto</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+</cem:lifeCycle>
+<cem:metaMetadata>
+<cem:identifier>
+<cem:catalog catName="RED" catSource="http://www.mineducacion.gov.co/">HT9B32GN1HM_META</cem:catalog>
+</cem:identifier>
+<cem:identifier>
+<cem:catalog catName="SENA" catSource="https://senaintro.blackboard.com/webapps/cmsmain/webui/institution">IDI-CON-OBJ-001-n7-02-05_META</cem:catalog>
+</cem:identifier>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="http://www.edistribution.co/">enpe8n7le02ob05_META</cem:catalog>
+</cem:identifier>
+<cem:contribute>
+<cem:role schema="CEM">Catalogador</cem:role>
+<cem:entity country="CO" entityForm="" institution="eDistribution" src="contacto@edistribution.co" type="Persona">Hurtado Castro, Paola</cem:entity>
+<cem:date>2017-09-22</cem:date>
+</cem:contribute>
+<cem:metadataSchema>CEM 2.0</cem:metadataSchema>
+<cem:language>es</cem:language>
+</cem:metaMetadata>
+<cem:technical>
+<cem:format codec="" extension="zip">application/zip</cem:format>
+<cem:size>22MB</cem:size>
+<cem:location src="    https://senaintro.blackboard.com/webapps/cmsmain/webui/institution/SENA-FUENTES/Ventas/228106?action=frameset&amp;subaction=view&amp;uniq=l35vgy&amp;tab_tab_group_id=null" storage=" https://senaintro.blackboard.com/webapps/cmsmain/webui/institution/SENA/Ventas/228106/Contenido/OVA?action=frameset&amp;subaction=view&amp;uniq=l35y7t&amp;mask=%2Finstitution%2FSENA%2FVentas%2F621303">https://senaintro.blackboard.com/bbcswebdav/institution/SENA/Ventas/228106/Contenido/OVA/enpe8n7le02ob05.zip</cem:location>
+<cem:requirement>
+<cem:orComposite>
+<cem:type>Software</cem:type>
+<cem:name>Google Chrome</cem:name>
+<cem:minimumVersion>32.0.1700</cem:minimumVersion>
+<cem:maximumVersion>54</cem:maximumVersion>
+</cem:orComposite>
+<cem:orComposite>
+<cem:type>Software</cem:type>
+<cem:name>Mozilla Firefox</cem:name>
+<cem:minimumVersion>42.0</cem:minimumVersion>
+<cem:maximumVersion>49</cem:maximumVersion>
+</cem:orComposite>
+<cem:orComposite>
+<cem:type>Software</cem:type>
+<cem:name>Internet Explorer</cem:name>
+<cem:minimumVersion>11.0.9600.16428</cem:minimumVersion>
+<cem:maximumVersion>11.0.9600.16428</cem:maximumVersion>
+</cem:orComposite>
+<cem:orComposite>
+<cem:type>Software</cem:type>
+<cem:name>Android</cem:name>
+<cem:minimumVersion>4.4.4</cem:minimumVersion>
+<cem:maximumVersion>5.1</cem:maximumVersion>
+</cem:orComposite>
+</cem:requirement>
+<cem:installationRemarks kind="" lang="es" src=""/>
+<cem:otherPlatformRequirements kind="" lang="es" src=""/>
+<cem:duration>0</cem:duration>
+<cem:accessibility>
+<cem:subtittled lang="en">false</cem:subtittled>
+<cem:audioDescription lang="en">false</cem:audioDescription>
+<cem:signLanguage>false</cem:signLanguage>
+<cem:textBrowser>false</cem:textBrowser>
+<cem:changeSizeOfLetter>false</cem:changeSizeOfLetter>
+<cem:changeColorAndContrast>false</cem:changeColorAndContrast>
+</cem:accessibility>
+<cem:image fileName="" size="TS" src="" type=""/>
+</cem:technical>
+<cem:educational>
+<cem:interactivityType schema="LOM">Mixto</cem:interactivityType>
+<cem:resourceType schema="MEN">
+<cem:levelOne value="Recurso Educativo Digital">
+<cem:levelTwo levelFive="" levelFour="" levelThree="Objeto de aprendizaje">Granularidad</cem:levelTwo>
+<cem:levelTwo levelFive="" levelFour="Juegos educativos" levelThree="Software">Información</cem:levelTwo>
+<cem:levelTwo levelFive="" levelFour="" levelThree="Guía">Intencionalidad didáctica</cem:levelTwo>
+<cem:levelTwo levelFive="" levelFour="" levelThree="Conceptual">Intencionalidad pedagógica</cem:levelTwo>
+</cem:levelOne>
+</cem:resourceType>
+<cem:interactivityLevel schema="LOM">Alta</cem:interactivityLevel>
+<cem:semanticDensity schema="LOM">Alta</cem:semanticDensity>
+<cem:intentedEndUserRole populationGroup="Todas" schema="MEN">Estudiante de Educación Superior</cem:intentedEndUserRole>
+<cem:context educativeLevel="Educación Superior" gradeGroup="Intermedio A (B1.3)" schema="SENA" subLevel="Técnica Profesional"/>
+<cem:context educativeLevel="Educación Superior" gradeGroup="Intermedio A (B1.3)" schema="SENA" subLevel="Tecnológica"/>
+<cem:typicalAgeRange ageFrom="15" ageTo="99"/>
+<cem:difficulty schema="LOM">Alta</cem:difficulty>
+<cem:typicalLearningTime>0:25h/m</cem:typicalLearningTime>
+<cem:description>
+<cem:recommendedUse lang="en">This digital resource can be used as an activity that allows the learner to reflect on the use of grammar of English language in different communicative contexts. The instuctor can work further on actitivities and tasks that help learners to improve their procedural knowledge.</cem:recommendedUse>
+<cem:triggerQuestion lang="en">What are some common concerns about cloud services?, What are some agreements the vendor offers when getting cloud services?</cem:triggerQuestion>
+<cem:pedagogicalAspect lang="en">The learning objects are presented in a blended learning pedagogical approach. This means that students develop their language skills by both using an online content and attending  on site lessons. Regarding this, the students master communicative functions that are developed according to the Common European Framework standards for this level. Moreover, this learning object permits the student to develop grammar, vocabulary, reading, and writing skills.</cem:pedagogicalAspect>
+<cem:learningGoal lang="en">Understand information about people’s backgrounds in spoken or written documents. Define strategies to make terms of reference and supplier assessment processes, in technology acquisition, based on established protocols.</cem:learningGoal>
+</cem:description>
+</cem:educational>
+<cem:rights>
+<cem:cost currency="COP">Gratuito</cem:cost>
+<cem:copyrightsAndOtherRestrictions lang="es" license="CC BY-NC-ND" providerCountry="CO" rightsHolder="Servicio Nacional de Aprendizaje SENA" scope="CO" src="http://creativecommons.org/licenses/by-nc-nd/2.5/co/" type="Institución" version="2.5 Colombia" year="2014"> Creative Commons — Atribución­NoComercial­SinDerivadas 2.5 Colombia — CC BY­NC­ND 2.5 CO</cem:copyrightsAndOtherRestrictions>
+<cem:permission copy="true" download="false" edit="false" periodFrom="2014" periodTo="Indefinido" print="true" view="true"/>
+</cem:rights>
+<cem:relation>
+<cem:kind schema="CEM">Es parte de</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">This lesson "Technological Needs and Negotiation", belongs to "B1.3 Intermediate", English for Specific Purposes course. It is composed of twelve learning objects, that have the following learning outcomes: Understand information about people’s backgrounds in spoken or written documents. Interpret the IT needs assessment, to determine the required technology to manage information, according to the rules and protocols established by the company. On the other hand, the communicative functions of this lesson are: Organize points in arguments about topics related to Info systemsTalk about things people are supposed to do and things that are supposed to happen Explain the importance of the legal framework for technological negociation</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re1</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Let's Start is the first resource of this object which belongs to English for Specific Purposes "B1.3 Intermediate", and it is intended to present the can do statements and the trigger questions.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re2</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Let's Explore is the second resource that makes part ot the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to present a stimulus to help students integrate new and previous knowledge.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re3</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Let's Practice is the 3 resource that makes part of the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to work on activities that allow students to reinforce language skills.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re4</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Let's Practice is the 4 resource that makes part of the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to work on activities that allow students to reinforce language skills.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re5</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Let's Practice is the 5 resource that makes part of the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to work on activities that allow students to reinforce language skills.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re6</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Check Your Progress is the 6 resource that makes part of the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to assess the student's knowledge.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:relation>
+<cem:kind schema="CEM">Está compuesto por</cem:kind>
+<cem:resource>
+<cem:identifier>
+<cem:catalog catName="eDistribution" catSource="https://sena.blackboard.com">enpe8n7le02ob05re7</cem:catalog>
+</cem:identifier>
+<cem:description lang="en">Takeaway is the 7 resource that makes part of the level "B1.3 Intermediate" which belongs to English for Specific Purposes. It is intended to give a review of the studied content in the LO.</cem:description>
+</cem:resource>
+</cem:relation>
+<cem:annotation>
+<cem:entity country="unknown" entityForm="" institution="eDistribution SAS" src="" type="Persona">SENA</cem:entity>
+<cem:date>2017-09-22</cem:date>
+<cem:description lang="es"/>
+<cem:getRatingURI/>
+<cem:getCommentsURI/>
+</cem:annotation>
+<cem:classification>
+<cem:purpose lang="es">Facilitar la búsqueda y recuperación de los recursos educativos digitales para la enseñanza de lenguas mediante criterios taxonómicos relacionados con los núcleos básicos del conocimiento y los estándares básicos de competencias.</cem:purpose>
+<cem:taxonPath schema="MEN">
+<cem:levelOne value="Núcleos básicos de conocimiento">
+<cem:levelTwo levelThree="Lenguas modernas, Literatura, Lingüística y afines">Ciencias sociales y humanas</cem:levelTwo>
+</cem:levelOne>
+</cem:taxonPath>
+<cem:taxonPath schema="DEWEY">
+<cem:levelOne value="400">
+<cem:levelTwo levelThree="428.34">Inglés como segunda lengua - lingüística aplicada - enfoque audio-lingual</cem:levelTwo>
+</cem:levelOne>
+</cem:taxonPath>
+<cem:taxonPath schema="MEN">
+<cem:levelOne value="Área de conocimiento e Educación Preescolar, Básica y Media">
+<cem:levelTwo levelThree="Lingüística">Humanidades, lengua castellana e idiomas extranjeros</cem:levelTwo>
+</cem:levelOne>
+</cem:taxonPath>
+<cem:taxonPath schema="SENA">
+<cem:levelOne value="Tecnólogo en análisis y desarrollo de sistemas de la información">
+<cem:levelTwo levelThree="228106">Ventas y comercialización</cem:levelTwo>
+</cem:levelOne>
+</cem:taxonPath>
+<cem:description lang="es"/>
+<cem:keyword lang="es">
+<cem:li>Bilingüismo |Inglés con propósitos específicos| Intermedio A (B1.3)</cem:li>
+</cem:keyword>
+</cem:classification>
+</cem:cem>

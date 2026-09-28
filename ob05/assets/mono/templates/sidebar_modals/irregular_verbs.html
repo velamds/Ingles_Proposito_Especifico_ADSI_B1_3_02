@@ -1,0 +1,62 @@
+<div class="modal fade" id="myIrregularVerbs" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myIrregularVerbs').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel">Irregular Verbs</h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3 search-area-container">
+
+                        <div class= "search-area">
+                            <div class="row search-bar">
+                                <div class="col-md-12 col-sm-12 col-xs-12 search-bar-container">
+                                    <input data-bind="value: $root.modal_common_search_term, valueUpdate: 'afterkeydown'" placeholder="Search..."></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wordList grammar-list">
+                            <div class="list-letters">
+                                <ul class="list-words list-unstyled link-cursor" data-bind='foreach: $root.irregular_verbs'>
+                                    <!-- ko if: ($root.modal_common_search_term().length == 0 || $data.verb.toLowerCase().indexOf($root.modal_common_search_term().toLowerCase()) >= 0) -->
+                                        <div class="col-md-12 col-sm-12 col-xs-12 word-content-container">
+                                            <li data-bind="click: $root.modal_common_set_selected_item, css: $root.modal_common_selected_item() == $data ? 'selected' : ''">
+                                            <span class="words-list-container" data-bind="html: $data.verb"></span> </li>
+                                        </div>
+                                    <!-- /ko -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-9 word-content-container">
+                        <div class="select-word center-block" data-bind="visible: ! $root.modal_common_selected_item()">
+                            <div class="info-img"><img data-bind="attr:{src:'assets/' + lms_config.product_type + '/icons/info_icon.png'}" />
+                            </div>
+                            <div class="select-word-text">
+                                <p> Select a word from the list, or enter a word in the search box to see it's definition. </p>
+                            </div>
+                        </div>
+                        <div class="word-info"  data-bind="if: $root.modal_common_selected_item">
+                            <div class="word-header">
+                                <div class="col-md-12 col-sm-12 col-xs-12 header-container">
+                                    <span class="word-title" data-bind="text: $root.modal_common_selected_item().verb"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h4 class="irreggular_verb-detail-title">Past</h4>
+                                    <h4 class="irreggular_verb-details" data-bind="text: $root.modal_common_selected_item().p"></h4>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div >
+                                    <h4 class="irreggular_verb-detail-title">Past Participle</h4>
+                                    <h4 class="irreggular_verb-details" data-bind="text: $root.modal_common_selected_item().pp"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
