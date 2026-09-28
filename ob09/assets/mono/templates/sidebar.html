@@ -1,0 +1,18 @@
+<div class="sidebar-opener link-cursor" data-bind="click: function () { move_sidebar(); }, css:$root.sidebar_finished_closing() == 1 ? 'closed' : 'open'">
+</div>
+
+<!-- ko foreach:sidebar_tools -->
+    <!-- ko if:!(class_name() == 'lab-task' && ([581,576,571,566,561,587,592,597,602].indexOf(parseInt($root.lms_config.sco_number)) >= 0)) -->
+        <div class="sidebar-item link-cursor" data-bind="click: function () {$root.set_selected_toolbar_item(id());} , css: current_css()"> 
+            <span data-bind="text:text()"></span>
+        </div>
+        <!-- ko foreach:sub_items -->
+            <div class="sidebar-sub-item link-cursor" data-bind="visible: $root.current_selected_toolbar_item() == $parent.id() , click:function(){ fire_event();}, css: current_css()">
+                <span data-bind="text:text()"></span>
+            </div>
+        <!-- /ko -->
+    <!-- /ko -->
+<!-- /ko -->
+<div class="sidebar-bottom link-cursor" data-bind="click: function () { move_sidebar(); }"
+ onmouseover= "$('.sidebar-opener').addClass('test')" onmouseout= "$('.sidebar-opener').removeClass('test');">
+</div>

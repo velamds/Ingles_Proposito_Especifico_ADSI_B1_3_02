@@ -1,0 +1,131 @@
+.contenedor_actividad_scrabble{
+    top: 20% !important;
+    width: 95% !important;
+}
+.contenedor_scrabble{
+    position: relative;
+    width: 80%;
+    left: 5%;
+    border: solid 3px #065875;
+    height: 70%;
+    border-top: none;
+    background-image: url("../img/scrabble_bg_cuadros.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px 10px;
+    float: left;
+}
+.dragged{
+    visibility: hidden;
+}
+.pregunta_scrabble{
+    background-image: url("../img/scrabble_bg.png");
+    width: 80%;
+    float: left;
+    position: relative;
+    left: 5%;
+}
+.pregunta_scrabble p{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 0;
+}
+.letras_scrabble{
+    width: 90%;
+    height: 70px;
+    background-color: #e3cfaa;
+    background-image: url("../img/scrabble_tabla.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5%;
+    bottom: 2vw;
+    z-index: 1;
+}
+.letras_scrabble td p{
+    text-align: center;
+    margin: 0;
+    height: 3vw;
+}
+.letras_scrabble td img{
+    width: 40px !important;
+    height: 40px !important;
+    cursor: pointer;
+}
+#palabra_oculta{
+    margin: 12px auto;
+}
+#palabra_oculta td div, .espacio_en_blanco_scrabble{
+    position: relative;
+    float: left;
+    width: 45px;
+    height: 45px;
+    border: solid 1px #3fc4cd;
+    background-color: #9fa893;
+}
+.espacio_en_blanco_scrabble{
+    border: none !important;
+    background-color: transparent !important;
+}
+#btn_actividad_container{
+    position: absolute !important;
+    bottom: 60px;
+}
+@media only screen and (min-width: 1440px){
+    .contenedor_scrabble{
+        height: 80%;
+    }
+    #palabra_oculta td div, 
+    .espacio_en_blanco_scrabble {
+        float: left;
+        width: 55px;
+        height: 55px;
+    }
+    .letras_scrabble td img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .letras_scrabble{
+        height: 80px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .contenedor_scrabble{
+        height: 65%;
+    }
+    .pregunta_scrabble,
+    .contenedor_scrabble{
+        top: 10px;
+    }
+    #palabra_oculta td div, 
+    .espacio_en_blanco_scrabble {
+        float: left;
+        width: 42px;
+        height: 42px;
+    }
+    .letras_scrabble td img{
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .contenedor_scrabble{
+        height: 55%;
+    }
+    .pregunta_scrabble,
+    .contenedor_scrabble{
+        top: 10px;
+    }
+    #palabra_oculta td div, 
+    .espacio_en_blanco_scrabble {
+        float: left;
+        width: 42px;
+        height: 42px;
+    }
+    .letras_scrabble td img{
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
