@@ -1,0 +1,76 @@
+<div class="modal fade" id="myCommonModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myCommonModal').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel" data-bind="text: $root.modal_common_items().title"></h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 search-area-container">
+
+                        <div class= "search-area">
+                            <div class="row search-bar">
+                                <div class="col-md-12 col-sm-12 col-xs-12 search-bar-container">
+                                    <input data-bind="value: $root.modal_common_search_term, valueUpdate: 'afterkeydown'" placeholder="Search..."></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wordList grammar-list">
+                            <div class="list-letters">
+                                <ul class="list-words list-unstyled link-cursor" data-bind='foreach: $root.modal_common_items().content'>
+                                    <!-- ko if: ($root.modal_common_search_term().length == 0 || $data.item.toLowerCase().indexOf($root.modal_common_search_term().toLowerCase()) >= 0) -->
+                                        <div class="col-md-12 col-sm-12 col-xs-12 word-content-container">
+                                            <li data-bind="click: $root.modal_common_set_selected_item, css: $root.modal_common_selected_item() == $data ? 'selected' : ''">
+                                                <span class="words-list-container"> </span>
+                                                <div class="inner-word-title">
+                                                    <span data-bind="html: $data.item"> </span>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    <!-- /ko -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8 word-content-container modal_content_area">
+                        <div class="select-word center-block" data-bind="visible: ! $root.modal_common_selected_item()">
+                            <div class="info-img"><img data-bind="attr:{src:'assets/' + lms_config.product_type + '/icons/info_icon.png'}" />
+                            </div>
+                            <div class="select-word-text">
+                                <p> Select a word or phrase from the list, or enter a word or phrase in the search box to learn more about it. </p>
+                            </div>
+                        </div>
+                        <div class="word-info"  data-bind="if: $root.modal_common_selected_item">
+                            <div class="word-header">
+                                <div class="col-md-12 col-sm-12 col-xs-12 header-container">
+                                    <!-- ko ifnot:  $root.modal_common_selected_item().local -->
+                                        <span class="word-title" data-bind="text: $root.modal_common_selected_item().item"></span>
+                                    <!-- /ko -->
+                                    <!-- ko if:  $root.modal_common_selected_item().local -->
+                                        <span class="word-title" data-bind="text: $root.modal_common_selected_item().item + $root.modal_common_selected_item().local"></span>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                            <div class="word-content">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <p class="text_tip-list" data-bind="html: $root.modal_common_selected_item().definition"></p>
+                                    <!-- ko if: $root.modal_common_selected_item().tips -->
+                                        <p data-bind="visible: $root.modal_common_selected_item().tips.length > 0">Tips</p>
+                                        <div class="text_tip-list grammar-list">
+                                            <ul class="list-words list-unstyled" data-bind="foreach: $root.modal_common_selected_item().tips">
+                                                <li>
+                                                    <div class="words-list-container" data-bind="html: $data"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
