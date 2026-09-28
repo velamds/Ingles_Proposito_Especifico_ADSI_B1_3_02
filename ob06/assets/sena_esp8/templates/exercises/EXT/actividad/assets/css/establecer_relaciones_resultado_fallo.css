@@ -1,0 +1,44 @@
+
+.establecer_parejas_resultado_fallo div{
+    font-family: arial, sans-serif;
+}
+
+.contenedor_resultado_fallo_establecer_parejas{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.establecer_parejas_resultado_fallo{
+    width: 50%;
+    position: relative;
+    height: 50%;
+    top: 45%;
+    left: 25%;
+}
+
+.establecer_parejas_resultado_fallo > div{
+    width: 40%;
+    float: left;
+    text-align: center;
+    color: #004b5e;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.establecer_parejas_resultado_fallo > div > div{
+    width: 100%;
+    float: left;
+}
+
+
+.establecer_parejas_resultado_fallo > div > div div{
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+}
+
+.establecer_parejas_resultado_fallo > div > div div img{
+    width: 80%;
+}

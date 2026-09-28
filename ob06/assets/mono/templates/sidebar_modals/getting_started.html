@@ -1,0 +1,33 @@
+<div class="modal fade" id="myGettingStarted" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myGettingStarted').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel">Getting Started</h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <br />
+                        <span data-bind="html:$root.localization.help_gettingstarted_header">
+                            <p>To get started make sure you download your <img class="help-toolbar-img" data-bind="attr: { src: 'assets/'+$root.product_type+'/icons/toolbar-lab-task.png' }" /> <span class="product-color-text">*lab task </span>. You can find this in the toolbar on the right. It has several tools that will help you with the lesson.</p>
+                        </span>
+                        <div>
+                            <span data-bind="html:$root.localization.help_gettingstarted_startlesson">
+                                Once you are ready hit the Start lesson button to begin. 
+                            </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="help-toolbar-img btn product-color-white-text welcome-start-btn" data-bind="html:localization.welcome_start_btn" type="button">Start lesson</button>
+                        </div>
+                        <br />
+                        <div>
+                            <span data-bind="html:$root.localization.help_gettingstarted_footer">
+                                <p>Good luck!</p><br /><p>*Note: Lab tasks are only available for certian Lessons</p>
+                            </span>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

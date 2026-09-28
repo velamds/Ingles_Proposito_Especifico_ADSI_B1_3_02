@@ -1,0 +1,41 @@
+<div class="modal fade" id="myExerciseBar" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myExerciseBar').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel">Exercise Bar</h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <br />
+                        <span data-bind="html:$root.localization.help_exercisebar_header">
+                            <p>The <span class="product-color-text">exercise bar,</span> located at the bottom of the screen, gives you access to all exercises for the lesson. It also shows you your results for each exercise.</p>
+                        </span>
+                        <br />
+                        <img class="help-toolbar-img-help img-responsive" data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/exe_bar.png' }" />
+                        <br />
+                        <span class="product-color-text" data-bind="html:$root.localization.help_exercisebar_exercisebar_title">Exercise bar </span><br />
+                        <span data-bind="html:$root.localization.help_exercisebar_exercisebar">
+                            <p style="display: inline;">Click on an&nbsp; <ul style="display: inline;" class="list-inline nav-fixed-bottom nav-scroll-items"><li>5</li></ul> exercise box to go directly to that exercise.</p>
+                            <p style="display: inline;">Results for each activity are displayed by either a&nbsp; <ul style="display: inline;" class="list-inline nav-fixed-bottom nav-scroll-items"><li class="success">5</li></ul> (correct) or&nbsp; <ul style="display: inline;" class="list-inline nav-fixed-bottom nav-scroll-items"><li class="danger">6</li></ul> (incorrect).</p>
+                        </span>
+                        <span class="product-color-text" data-bind="html:$root.localization.help_exercisebar_buttons_title">Back / Next buttons </span><br />
+                        <span data-bind="html:$root.localization.help_exercisebar_buttons">
+                            Use the back and next buttons to navigate through the exercises.
+                        </span>
+                        <br />
+                        <div class="">
+                            <ul class="list-inline nav-controls-list">
+                                <li><img data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/lessonNav_back_button.png' }" /></li>
+                                <li class="nav-controls"><p class="nav-text text-center">1 / 10</p></li>
+                                <li><img data-bind="attr: { src: 'assets/'+$root.lms_config.product_type+'/icons/lessonNav_next_button.png' }" /></li>
+                            </ul>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+.contenedor_actividad_establecer_relaciones{
+    height: 90% !important;
+}
+.actividad_establecer_parejas{
+    width: 750px;
+    height: 345px;
+    display: block;
+    margin: auto;
+    padding-left: 60px;
+    position: relative;
+    top: 10px;
+}
+
+.est_parj_fila_1,
+.est_parj_fila_2,
+.est_parj_fila_3{
+    width: 90%;
+    position: relative;
+    height: 25%;
+}
+
+.est_parj_imagen_1,
+.est_parj_imagen_2,
+.est_parj_imagen_3,
+.est_parj_imagen_4{
+    position: absolute;
+    width: 25%;
+    height: 95%;
+}
+
+.est_parj_imagen_1 img,
+.est_parj_imagen_2 img,
+.est_parj_imagen_3 img,
+.est_parj_imagen_4 img{
+    position: relative;
+    width: 75%;
+    height: 90%;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.est_parj_imagen_1{
+    left: 0;
+}
+
+.est_parj_imagen_2{
+    left: 22%;
+}
+
+.est_parj_imagen_3{
+    left: 44%;
+}
+
+.est_parj_imagen_4{
+    left: 66%;
+}
+
+.est_select_imagen_1,
+.est_select_imagen_2,
+.est_select_imagen_3,
+.est_select_imagen_4{
+    position: absolute;
+    width: 25%;
+    height: 95%;
+}
+
+.est_select_imagen_1 img,
+.est_select_imagen_2 img,
+.est_select_imagen_3 img,
+.est_select_imagen_4 img{
+    position: relative;
+    width: 75%;
+    height: 90%;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.est_select_imagen_1{
+    left: 0;
+}
+
+.est_select_imagen_2{
+    left: 22%;
+}
+
+.est_select_imagen_3{
+    left: 44%;
+}
+
+.est_select_imagen_4{
+    left: 66%;
+}
+
+.est_parj_selector{
+    position: absolute !important;
+    left: -5%;
+    bottom: 0;
+    width: 25% !important;
+    height: auto !important;
+    z-index: 0;
+}
+
+.est_parj_num{
+    position: absolute;
+    right: 30%;
+    bottom: 12%;
+    height: auto !important;
+    z-index: 0;
+    color: #034c5e;
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+@media only screen and (min-width: 1440px){
+    .actividad_establecer_parejas {
+        width: 950px;
+        height: 450px;
+        top: 15px;
+    }
+}
+@media only screen and (max-width: 1024px) and (max-height: 768px){
+    .actividad_establecer_parejas{
+        width: 630px;
+        height: 280px;
+        top: 20px;
+    }
+}

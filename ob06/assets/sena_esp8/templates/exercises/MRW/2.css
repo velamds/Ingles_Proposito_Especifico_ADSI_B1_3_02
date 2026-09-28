@@ -1,0 +1,105 @@
+span.MRW_response.selected  {
+    background-color:#022f64;
+    color:white;
+    border: 1px solid transparent;
+}
+#main.cmn span.MRW_response.selected  {
+    background-color:#022f64;
+    color:white;
+}
+#main.fr span.MRW_response.selected  {
+    background-color:#022f64;
+    color:white;
+}
+#main.pt span.MRW_response.selected  {
+    background-color:#022f64;
+    color:white;
+}
+#main.es span.MRW_response.selected  {
+    background-color:#022f64;
+    color:white;
+}
+
+span.MRW_response{
+    padding-left:9px;
+    padding-right:9px;
+    background-color:#B3D3F9;
+    color: #022f64;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: 0 2px 0px rgba(0,0,0,0.1);
+}
+#main.cmn span.MRW_response{
+    background-color:#ffedeb;
+    color: #0C488D;
+}
+#main.fr span.MRW_response{
+    background-color:#feeded;
+    color: #0C488D;
+}
+#main.pt span.MRW_response{
+    background-color:#e0fee4;
+    color: #0C488D;
+}
+#main.es span.MRW_response{
+    background-color:#f3eff9;
+    color: #0C488D;
+}
+
+span.MRW_response_container :hover{
+    color: #0C488D;
+}
+#main.cmn span.MRW_response_container :hover{
+    color: #0C488D;
+}
+#main.fr span.MRW_response_container :hover{
+    color: #0C488D;
+}
+#main.pt span.MRW_response_container :hover{
+    color: #0C488D;
+}
+#main.es span.MRW_response_container :hover{
+    color: #0C488D;
+}
+
+span.MRW_response_container.selected :hover{
+    color: white;
+}
+#main.cmn span.MRW_response_container.selected :hover{
+    color: white;
+}
+#main.fr span.MRW_response_container.selected :hover{
+    color: white;
+}
+#main.pt span.MRW_response_container.selected :hover{
+    color: white;
+}
+#main.es span.MRW_response_container.selected :hover{
+    color: white;
+}
+
+.MRW_paragraph
+{
+    line-height:1.8;
+}
+
+.MRW-question{
+    line-height: 2.9rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.MRW-col
+{
+    padding-left: 0;
+    position: relative;
+}
+
+.MRWR-feedback-icon {
+    position: static;
+}
+
+.MRWR-audio-row {
+    margin-top: 15px;
+}
