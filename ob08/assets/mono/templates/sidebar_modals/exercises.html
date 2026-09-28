@@ -1,0 +1,63 @@
+<div class="modal fade" id="myExercises" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header learning-tools">
+                <span class="close-button link-cursor pull-right" data-bind="click:function(){$('#myExercises').modal('hide');}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <h4 class="modal-title" id="myModalLabel">Exercises</h4>
+            </div>
+            <div class="modal-body learning-tools">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <br />
+                        <span data-bind="html:$root.localization.help_exercises_header">
+                            <p>Follow the <span class="product-color-text">instructions</span> in each exercise to complete them correctly.</p>
+                            <p>Make sure to read and/or listen to the text to ensure you have all the necessary information to complete the activity.</p>
+                            <p>For each exercise there are <span class="product-color-text">four main buttons</span> to use:</p>
+                        </span>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <button type="button" data-bind="text:$root.localization.clear" class="btn btn-xs clear-responses">Clear</button>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-9">
+                                <span data-bind="html:$root.localization.help_exercises_clear">Clears all answers and starts the exercise again.</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div style="padding-left:20px;" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <button type="button" data-bind="text:$root.localization.solution" class="btn btn-xs show-answer">Show Answer</button>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8  col-xs-9">
+                                <span data-bind="html:$root.localization.help_exercises_solution">Shows exercise solution.</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <button type="button" class="btn btn-xs check-answer">Check Answer</button>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8  col-xs-9">
+                                <span data-bind="html:$root.localization.help_exercises_checkanswer">Checks all submitted answers. An X and a checkmark indicate correct and incorrect answers.</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <button type="button" class="btn btn-xs next-exercise">Next</button>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8  col-xs-9">
+                                <span data-bind="html:$root.localization.help_exercises_next">When the exercise is correct, the Next button will appear. Click on it to move to the next exercise.</span>
+                            </div>
+                        </div>
+                        <br />
+                        <span data-bind="html:$root.localization.help_exercises_footer">
+                            <p>In some activities, you may need to use the scroll bar on the right to see all the questions or answers.</p>
+                            <p>To move to the next exercise, use the exercise bar at the bottom of the screen.</p>
+                        </span>
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

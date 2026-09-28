@@ -1,0 +1,74 @@
+.pregunta_span{
+    float: none !important;
+    display: initial;
+}
+.comp_frase_block{
+    float: none !important;
+    display: inline-block !important;
+}
+.actividad_comletar_frase{
+    position: absolute;
+    width: 80%;
+    height: 52%;
+    top: 40%;
+    left: 10%;
+}
+.contenedor_respuestas_completar_frase{
+    position: relative;
+    width: 80%;
+    height: 52%;
+    top: 60%;
+    left: 10%;
+}
+
+.comletar_frase{
+    font-size: 16px;
+    text-align: left;
+    line-height: 2;
+}
+.pregunta_span{
+    float: left;
+    margin: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.actividad_activity_completar_frase{
+    top: 5%;
+    position: absolute;
+    width: 95%;
+}
+.palabras_drag_and_drop_comp_frase_completar_frase{
+    position: relative;
+    left: 0%;
+    top: 10px;
+    text-align: left;
+}
+.comp_frase_block{
+    background: #004c5e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid 0.2vw #03b1bc;
+    position: relative;
+    width: 190px;
+    height: 27px;
+    float: left;
+    top: 5px;
+}
+.cont_respuesta_completar_frase{
+    background: #004c5e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15.5px;
+    position: relative;
+    width: 190px;
+    height: 25px;
+    margin: 5px;
+    position: relative;
+    float: left;
+    padding: 3px 0 0 3px;
+}
+#btn_actividad_container{
+    position: absolute !important;
+    bottom: 40px;
+}
