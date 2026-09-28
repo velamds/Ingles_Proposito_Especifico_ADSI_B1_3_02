@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Regular.otf') format('opentype');
+} 
+
+@font-face{
+    font-family: 'Source Sans Pro Black';
+    src: url('SourceSansPro-Black.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Source Sans Pro Bold';
+    src: url('SourceSansPro-Bold.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Source Sans Pro Semibold';
+    src: url('SourceSansPro-Semibold.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Source Sans Pro Light';
+    src: url('SourceSansPro-Light.otf') format('opentype');
+}

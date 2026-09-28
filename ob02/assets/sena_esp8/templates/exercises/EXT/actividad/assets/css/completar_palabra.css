@@ -1,0 +1,30 @@
+.actividad_completa_la_palabra{
+    position: absolute;
+    width: 80%;
+    height: 52%;
+    left: 10%;
+}
+
+.completa_la_palabra{
+    font-size: 16px;
+    text-align: left;
+    line-height: 2;
+}
+
+.completa_la_palabra select{
+    background: #004c5e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid 1px #03b1bc;
+    position: relative;
+    margin-right: 5px;
+}
+
+.completa_la_palabra select option{
+    background: #fff;
+    color: #004c5e;
+}
+#btn_actividad_container{
+    bottom: 40px;
+}
